@@ -1,0 +1,8 @@
+/* Overrides css in dist/hamburgers.css*/
+.hamburger {
+  /* border: 1px red solid; */
+  border-radius: 100%;
+  position: fixed;
+  top: 30px;
+  right: 50px;
+}
