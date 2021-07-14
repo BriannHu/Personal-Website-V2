@@ -1,8 +1,11 @@
 .nav-menu {
+  background: url(../../images/menu_background.svg);
+  background-size: 100% 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   height: 100vh;
+  transition: linear 0.3s;
   width: 100vw;
 }
 
@@ -20,25 +23,28 @@
 }
 
 .nav-site-links {
-  border: 1px red solid;
   height: 60%;
   width: 100%;
 }
 
 .nav-site-links-list {
   align-items: left;
-  border: 1px green solid;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
   height: 100%;
-  padding: 0 15rem;
+  padding-left: 40%;
   margin: 0;
   list-style: none;
 }
 
 .nav-site-links-item {
+  color: white;
   font-size: 4rem;
   font-weight: 900;
   text-align: left;
+}
+
+.fade-in {
+  opacity: 1;
 }

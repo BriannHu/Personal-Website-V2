@@ -1,27 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./NavButton.css";
 
-export default function NavButton() {
-  const [active, setActive] = useState(false);
-
-  const handleClick = () => {
-    setActive(!active);
-  };
-
+export default function NavButton(props) {
   return (
-    <button
-      className={
-        active
-          ? "hamburger hamburger--collapse is-active"
-          : "hamburger hamburger--collapse"
-      }
-      type="button"
-      onClick={handleClick}
-    >
-      <span className="hamburger-box">
-        <span className="hamburger-inner"></span>
-      </span>
-    </button>
+    <>
+      <button
+        className={
+          props.active
+            ? "hamburger hamburger--collapse is-active"
+            : "hamburger hamburger--collapse"
+        }
+        type="button"
+        onClick={props.handleClick}
+      >
+        <span className="hamburger-box">
+          <span className="hamburger-inner"></span>
+        </span>
+      </button>
+    </>
   );
 }

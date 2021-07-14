@@ -1,15 +1,11 @@
 import "./App.css";
 
-import NavButton from "./components/NavButton/NavButton";
-
-import NavMenu from "./components/NavMenu/NavMenu";
-// import Hero from "./components/Hero/Hero";
+import MainLayout from "./layouts/MainLayout";
 
 function App() {
   return (
     <div className="App">
-      <NavButton />
-      <NavMenu />
+      <MainLayout />
     </div>
   );
 }
