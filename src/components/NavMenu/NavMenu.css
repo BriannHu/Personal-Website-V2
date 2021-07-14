@@ -1,12 +1,13 @@
 .nav-menu {
-  background: url(../../images/menu_background.svg);
-  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, 0.75);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   height: 100vh;
-  transition: linear 0.3s;
+  text-align: center;
+  position: absolute;
   width: 100vw;
+  z-index: 1;
 }
 
 .nav-site-wrapper {
@@ -15,11 +16,6 @@
   justify-content: center;
   flex: 1;
   min-width: 400px;
-}
-
-.nav-extn-wrapper {
-  flex: 1;
-  min-width: 500px;
 }
 
 .nav-site-links {
@@ -33,16 +29,15 @@
   flex-flow: column;
   justify-content: space-evenly;
   height: 100%;
-  padding-left: 40%;
   margin: 0;
   list-style: none;
+  text-align: center;
 }
 
 .nav-site-links-item {
   color: white;
   font-size: 4rem;
   font-weight: 900;
-  text-align: left;
 }
 
 .fade-in {

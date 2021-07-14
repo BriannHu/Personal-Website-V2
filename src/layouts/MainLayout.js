@@ -15,7 +15,8 @@ export default function MainLayout() {
   return (
     <>
       <NavButton active={active} handleClick={handleClick} />
-      {active ? <NavMenu /> : <Hero />}
+      <NavMenu visibility={active ? "visible" : "hidden"} />
+      <Hero />
     </>
   );
 }

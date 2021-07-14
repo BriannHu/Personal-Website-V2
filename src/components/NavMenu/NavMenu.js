@@ -2,22 +2,19 @@ import React from "react";
 
 import "./NavMenu.css";
 
-export default function NavMenu() {
+export default function NavMenu(props) {
   return (
-    <div className="nav-menu">
+    <div className="nav-menu" style={{ visibility: props.visibility }}>
       <div className="nav-site-wrapper">
         <div className="nav-site-links">
           <ul className="nav-site-links-list">
-            <li className="nav-site-links-item">Home</li>
-            <li className="nav-site-links-item">About</li>
-            <li className="nav-site-links-item">Experience</li>
-            <li className="nav-site-links-item">Projects</li>
-            <li className="nav-site-links-item">Contact</li>
+            <li className="nav-site-links-item">home</li>
+            <li className="nav-site-links-item">about</li>
+            <li className="nav-site-links-item">experience</li>
+            <li className="nav-site-links-item">projects</li>
+            <li className="nav-site-links-item">contact</li>
           </ul>
         </div>
-      </div>
-      <div className="nav-extn-wrapper">
-        <div className="nav-extn-links">Links Here</div>
       </div>
     </div>
   );
