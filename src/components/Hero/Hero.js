@@ -1,5 +1,5 @@
 import React from "react";
-import TextLoop from "react-text-loop";
+// import TextLoop from "react-text-loop";
 
 import "./Hero.css";
 
@@ -8,9 +8,9 @@ export default function Hero() {
     <div className="hero-section">
       <div className="first-half">
         <div className="title">
-          Hello! <br />
-          I'm Brian 👋 <br />I love to{" "}
-          <TextLoop
+          Hello! 👋 I'm Brian <br />
+          {/* I love to{" "} */}
+          {/* <TextLoop
             children={[
               "build ideas.",
               "research tech.",
@@ -21,10 +21,9 @@ export default function Hero() {
             interval={2000}
             mask={true}
             adjustingSpeed={100}
-          ></TextLoop>
+          ></TextLoop> */}
         </div>
       </div>
-      <div className="second-half">Second</div>
     </div>
   );
 }
