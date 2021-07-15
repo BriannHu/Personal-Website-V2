@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import NavButton from "../components/NavButton/NavButton";
 
+import About from "../components/About/About";
 import Hero from "../components/Hero/Hero";
 import NavMenu from "../components/NavMenu/NavMenu";
 
@@ -14,9 +15,10 @@ export default function MainLayout() {
 
   return (
     <>
-      <NavButton active={active} handleClick={handleClick} />
-      <NavMenu visibility={active ? "visible" : "hidden"} />
+      {/* <NavButton active={active} handleClick={handleClick} /> */}
+      {/* <NavMenu visibility={active ? "visible" : "hidden"} /> */}
       <Hero />
+      {/* <About /> */}
     </>
   );
 }
