@@ -1,15 +1,11 @@
 import React from "react";
 // import TextLoop from "react-text-loop";
-import { Box, Button, Container, Grid, Typography } from "@material-ui/core";
+import { Box, Button, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import "./Hero.css";
-import { flexbox } from "@material-ui/system";
 
 const useStyles = makeStyles((theme) => ({
-  imageBox: {
-    maxHeight: 600,
-  },
   innerBox: {
     margin: "0 auto",
     maxWidth: "1236px",
@@ -59,19 +55,20 @@ export default function Hero() {
           <Grid className={classes.innerGridItem} container xs={12} md={6}>
             <Box>
               <Box className={classes.textBox1} component="div">
-                <Typography variant="h2" style={{ fontWeight: 600 }}>
-                  Hi! I'm Brian and I love to research
+                <Typography variant="h2" style={{ fontWeight: 900 }}>
+                  Hi, I'm Brian! <br /> I love to code
                 </Typography>
               </Box>
               <Box className={classes.textBox2} component="div">
                 <Typography variant="h6">
-                  I'm currently a third-year at McGill University, pursuing an
-                  Honors in Computer Science with a minor in Statistics.
+                  Currently third-year @ McGill University
+                  <br />
+                  Honors Computer Science + Statistics Minor
                 </Typography>
               </Box>
               <Box className={classes.textBox3} component="div">
                 <Button className={classes.textBoxButton} variant="outlined">
-                  Explore Website
+                  Explore Github
                 </Button>
                 <Button className={classes.textBoxButton} variant="outlined">
                   View Resume
