@@ -35,7 +35,7 @@ export const SocialMenuItems = [
     color: "red",
   },
   {
-    name: "Mail",
+    name: "Facebook",
     color: "purple",
   },
 ];
