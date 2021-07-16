@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   innerBox: {
     margin: "0 auto",
-    maxWidth: "1236px",
+    maxWidth: 1236,
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
     paddingLeft: theme.spacing(2),
@@ -42,7 +42,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
   typical: {
-    color: "purple",
     display: "inline-block",
     margin: 0,
   },
@@ -61,8 +60,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Hero() {
+export default function Hero(props) {
   const classes = useStyles();
+
   return (
     <Box className={classes.rootBox}>
       <Box className={classes.innerBox}>
@@ -72,21 +72,27 @@ export default function Hero() {
               <Box className={classes.textBox1} component="div">
                 <Typography variant="h2" style={{ fontWeight: 900 }}>
                   Hi, I'm Brian 👋 <br /> I love to{" "}
-                  <Typical
-                    className={classes.typical}
-                    steps={[
-                      "build.",
-                      3000,
-                      "research.",
-                      3000,
-                      "innovate.",
-                      3000,
-                      "learn.",
-                      3000,
-                    ]}
-                    loop={Infinity}
-                    wrapper="p"
-                  />
+                  <Typography
+                    component="span"
+                    variant="h2"
+                    style={{ color: props.color, fontWeight: 900 }}
+                  >
+                    <Typical
+                      className={classes.typical}
+                      steps={[
+                        "build.",
+                        3000,
+                        "research.",
+                        3000,
+                        "innovate.",
+                        3000,
+                        "learn.",
+                        3000,
+                      ]}
+                      loop={Infinity}
+                      wrapper="p"
+                    />
+                  </Typography>
                 </Typography>
               </Box>
               <Box className={classes.textBox2} component="div">
@@ -99,14 +105,17 @@ export default function Hero() {
               <Box className={classes.textBox3} component="div">
                 <Button
                   className={classes.textBoxButton}
-                  style={{ borderColor: "purple", color: "purple" }}
+                  style={{
+                    borderColor: props.color,
+                    color: props.color,
+                  }}
                   variant="outlined"
                 >
                   Explore Github <GitHubIcon className={classes.buttonIcon} />
                 </Button>
                 <Button
                   className={classes.textBoxButton}
-                  style={{ borderColor: "purple", color: "purple" }}
+                  style={{ borderColor: props.color, color: props.color }}
                   variant="outlined"
                 >
                   View Resume <ResumeIcon className={classes.buttonIcon} />
@@ -116,11 +125,7 @@ export default function Hero() {
           </Grid>
           <Grid className={classes.innerGridItem} item xs={12} md={6}>
             <Box className={classes.imageBox}>
-              <img
-                className="hero-image"
-                src="/images/dark_blue_procreate.png"
-                alt=""
-              ></img>
+              <img className="hero-image" src={props.image} alt=""></img>
             </Box>
           </Grid>
         </Grid>
