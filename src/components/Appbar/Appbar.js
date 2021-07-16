@@ -115,22 +115,22 @@ export default function Appbar(props) {
               <Box
                 className={classes.boxColorOption}
                 style={{ backgroundColor: colors.red[700] }}
-                onClick={() => props.handleColorClick("#D3302F")}
+                onClick={() => props.handleColorClick("red")}
               ></Box>
               <Box
                 className={classes.boxColorOption}
                 style={{ backgroundColor: colors.blue[700] }}
-                onClick={() => props.handleColorClick("#1876D2")}
+                onClick={() => props.handleColorClick("blue")}
               ></Box>
               <Box
                 className={classes.boxColorOption}
                 style={{ backgroundColor: colors.green[700] }}
-                onClick={() => props.handleColorClick("#04de37")}
+                onClick={() => props.handleColorClick("green")}
               ></Box>
               <Box
                 className={classes.boxColorOption}
                 style={{ backgroundColor: colors.purple[700] }}
-                onClick={() => props.handleColorClick("#7B1FA2")}
+                onClick={() => props.handleColorClick("purple")}
               ></Box>
             </Box>
             <IconButton

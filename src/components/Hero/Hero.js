@@ -1,10 +1,19 @@
 import React from "react";
-import { Box, Button, Grid, Typography } from "@material-ui/core";
+import { Link } from "react-router-dom";
+import {
+  Box,
+  Button,
+  IconButton,
+  Grid,
+  Tooltip,
+  Typography,
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import TextLoop from "react-text-loop";
 
 import GitHubIcon from "@material-ui/icons/GitHub";
+import InfoIcon from "@material-ui/icons/InfoOutlined";
 import ResumeIcon from "@material-ui/icons/MenuBook";
 
 import "./Hero.css";
@@ -13,10 +22,18 @@ const useStyles = makeStyles((theme) => ({
   buttonIcon: {
     marginLeft: theme.spacing(1),
   },
+  imageBox: {
+    position: "relative",
+  },
+  infoIcon: {
+    color: "rgba(255, 255, 255, 0.5)",
+    position: "absolute",
+    right: 0,
+  },
   innerBox: {
     margin: "0 auto",
     maxWidth: 1236,
-    paddingTop: theme.spacing(6),
+    paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(6),
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
@@ -129,6 +146,16 @@ export default function Hero(props) {
           </Grid>
           <Grid className={classes.innerGridItem} item xs={12} md={6}>
             <Box className={classes.imageBox}>
+              <Tooltip title={`Tutorial Credit: ${props.credit}`} arrow>
+                <IconButton
+                  component={Link}
+                  className={classes.infoIcon}
+                  to={{ pathname: `${props.creditLink}` }}
+                  target="_blank"
+                >
+                  <InfoIcon />
+                </IconButton>
+              </Tooltip>
               <img className="hero-image" src={props.image} alt=""></img>
             </Box>
           </Grid>

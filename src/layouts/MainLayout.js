@@ -1,31 +1,50 @@
 import React, { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
 
 import Appbar from "../components/Appbar/Appbar";
 import Hero from "../components/Hero/Hero";
 import SideMenu from "../components/Appbar/SideMenu";
 
+import * as colors from "../constants/Colors";
+import { ColorMap } from "../components/ColorMap/ColorMap";
+
 export default function MainLayout() {
   const [active, setActive] = useState(false);
-  const [color, setColor] = useState("purple");
-  const [image, setImage] = useState("/images/dark_blue_procreate.png");
+  const [color, setColor] = useState(ColorMap[colors.BLUE].color);
+  const [credit, setCredit] = useState(ColorMap[colors.BLUE].credit);
+  const [creditLink, setCreditLink] = useState(
+    ColorMap[colors.BLUE].creditLink
+  );
+
+  const [image, setImage] = useState(ColorMap[colors.BLUE].darkImage);
 
   const handleColorClick = (newValue) => {
-    setColor(newValue);
+    setColor(ColorMap[newValue].color);
     switch (newValue) {
-      case "#D3302F": // red
-        setImage("/images/dark_blue_procreate.png");
+      case colors.RED:
+        setCredit(ColorMap[colors.RED].credit);
+        setCreditLink(ColorMap[colors.RED].creditLink);
+        setImage(ColorMap[colors.RED].darkImage);
         break;
-      case "#1876D2": // blue
-        setImage("/images/dark_blue_procreate.png");
+      case colors.BLUE:
+        setCredit(ColorMap[colors.BLUE].credit);
+        setCreditLink(ColorMap[colors.BLUE].creditLink);
+        setImage(ColorMap[colors.BLUE].darkImage);
         break;
-      case "#04de37": // green
-        setImage("/images/dark_green_procreate.png");
+      case colors.GREEN:
+        setCredit(ColorMap[colors.GREEN].credit);
+        setCreditLink(ColorMap[colors.GREEN].creditLink);
+        setImage(ColorMap[colors.GREEN].darkImage);
         break;
-      case "7B1FA2": // purple
-        setImage("/images/dark_blue_procreate.png");
+      case colors.PURPLE:
+        setCredit(ColorMap[colors.PURPLE].credit);
+        setCreditLink(ColorMap[colors.PURPLE].creditLink);
+        setImage(ColorMap[colors.PURPLE].darkImage);
         break;
       default:
-        setImage("/images/dark_blue_procreate.png");
+        setCredit(ColorMap[colors.BLUE].credit);
+        setCreditLink(ColorMap[colors.BLUE].creditLink);
+        setImage(ColorMap[colors.BLUE].darkImage);
         break;
     }
   };
@@ -35,14 +54,19 @@ export default function MainLayout() {
   };
 
   return (
-    <>
+    <BrowserRouter>
       <Appbar
         handleColorClick={handleColorClick}
         handleMenuClick={handleMenuClick}
       />
 
       <SideMenu active={active} handleMenuClick={handleMenuClick} />
-      <Hero color={color} image={image} />
-    </>
+      <Hero
+        color={color}
+        credit={credit}
+        creditLink={creditLink}
+        image={image}
+      />
+    </BrowserRouter>
   );
 }
