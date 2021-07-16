@@ -1,11 +1,18 @@
 import React from "react";
-// import TextLoop from "react-text-loop";
 import { Box, Button, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+
+import Typical from "react-typical";
+
+import GitHubIcon from "@material-ui/icons/GitHub";
+import ResumeIcon from "@material-ui/icons/MenuBook";
 
 import "./Hero.css";
 
 const useStyles = makeStyles((theme) => ({
+  buttonIcon: {
+    marginLeft: theme.spacing(1),
+  },
   innerBox: {
     margin: "0 auto",
     maxWidth: "1236px",
@@ -23,23 +30,31 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
   textBox1: {
+    color: "white",
     marginBottom: theme.spacing(2),
   },
   textBox2: {
+    color: "grey",
     marginBottom: theme.spacing(3),
   },
   textBox3: {
     alignItems: "flex-start",
     display: "flex",
   },
+  typical: {
+    color: "purple",
+    display: "inline-block",
+    margin: 0,
+  },
   rootBox: {
-    backgroundColor: "#BBD9FB",
+    backgroundColor: "#1F1F1E",
   },
   rootContainer: {
     marginTop: theme.spacing(-4),
     marginLeft: theme.spacing(-4),
   },
   textBoxButton: {
+    color: "white",
     marginRight: theme.spacing(2),
     padding: "8px 24px",
     textTransform: "none",
@@ -56,7 +71,22 @@ export default function Hero() {
             <Box>
               <Box className={classes.textBox1} component="div">
                 <Typography variant="h2" style={{ fontWeight: 900 }}>
-                  Hi, I'm Brian! <br /> I love to code
+                  Hi, I'm Brian 👋 <br /> I love to{" "}
+                  <Typical
+                    className={classes.typical}
+                    steps={[
+                      "build.",
+                      3000,
+                      "research.",
+                      3000,
+                      "innovate.",
+                      3000,
+                      "learn.",
+                      3000,
+                    ]}
+                    loop={Infinity}
+                    wrapper="p"
+                  />
                 </Typography>
               </Box>
               <Box className={classes.textBox2} component="div">
@@ -67,11 +97,19 @@ export default function Hero() {
                 </Typography>
               </Box>
               <Box className={classes.textBox3} component="div">
-                <Button className={classes.textBoxButton} variant="outlined">
-                  Explore Github
+                <Button
+                  className={classes.textBoxButton}
+                  style={{ borderColor: "purple", color: "purple" }}
+                  variant="outlined"
+                >
+                  Explore Github <GitHubIcon className={classes.buttonIcon} />
                 </Button>
-                <Button className={classes.textBoxButton} variant="outlined">
-                  View Resume
+                <Button
+                  className={classes.textBoxButton}
+                  style={{ borderColor: "purple", color: "purple" }}
+                  variant="outlined"
+                >
+                  View Resume <ResumeIcon className={classes.buttonIcon} />
                 </Button>
               </Box>
             </Box>
@@ -80,7 +118,7 @@ export default function Hero() {
             <Box className={classes.imageBox}>
               <img
                 className="hero-image"
-                src="/images/procreate.png"
+                src="/images/dark_blue_procreate.png"
                 alt=""
               ></img>
             </Box>

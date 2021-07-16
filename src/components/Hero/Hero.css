@@ -1,36 +1,4 @@
-.hero-section {
-  background-image: url("../../images/horizontal_light_background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  display: flex;
-  height: 100vh;
-}
-
 .hero-image {
   height: 100%;
   width: 100%;
-}
-
-.first-half {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  min-width: 400px;
-}
-
-.title {
-  font-size: 5rem;
-  font-weight: 900;
-  line-height: 1.2;
-  text-align: left;
-  margin-left: 10%;
-}
-
-.text-loop {
-  box-sizing: border-box;
-  color: white;
-  text-align: center;
-  -webkit-text-stroke: 3px black;
 }
