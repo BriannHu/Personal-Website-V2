@@ -147,7 +147,7 @@ export default function Hero(props) {
           </Grid>
           <Grid className={classes.innerGridItem} item xs={12} md={6}>
             <Box className={classes.imageBox}>
-              <Tooltip title={`Tutorial Credit: ${props.credit}`} arrow>
+              <Tooltip title={`Procreate Credit: ${props.credit}`} arrow>
                 <IconButton
                   component={Link}
                   className={classes.infoIcon}
