@@ -2,8 +2,10 @@ import React, { useState } from "react";
 
 import Appbar from "../components/Appbar/Appbar";
 import Hero from "../components/Hero/Hero";
+import SideMenu from "../components/Appbar/SideMenu";
 
 export default function MainLayout() {
+  const [active, setActive] = useState(false);
   const [color, setColor] = useState("purple");
   const [image, setImage] = useState("/images/dark_blue_procreate.png");
 
@@ -28,9 +30,18 @@ export default function MainLayout() {
     }
   };
 
+  const handleMenuClick = () => {
+    setActive(!active);
+  };
+
   return (
     <>
-      <Appbar handleColorClick={handleColorClick} />
+      <Appbar
+        handleColorClick={handleColorClick}
+        handleMenuClick={handleMenuClick}
+      />
+
+      <SideMenu active={active} handleMenuClick={handleMenuClick} />
       <Hero color={color} image={image} />
     </>
   );

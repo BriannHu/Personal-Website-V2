@@ -99,7 +99,10 @@ export default function Appbar(props) {
         <Box className={classes.innerBox}>
           <Box className={classes.boxItem}>
             <Box className={classes.boxItem1Box1}>
-              <IconButton className={classes.menuIcon}>
+              <IconButton
+                className={classes.menuIcon}
+                onClick={props.handleMenuClick}
+              >
                 <MenuIcon />
               </IconButton>
             </Box>

@@ -40,10 +40,11 @@ const useStyles = makeStyles((theme) => ({
   textBox3: {
     alignItems: "flex-start",
     display: "flex",
+    // eslint-disable-next-line
+    ["@media (max-width:640px)"]: { flexDirection: "column" },
   },
-  typical: {
-    display: "inline-block",
-    margin: 0,
+  textLoop: {
+    zIndex: 0,
   },
   rootBox: {
     backgroundColor: "#1F1F1E",
@@ -58,6 +59,11 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
     padding: "8px 24px",
     textTransform: "none",
+    // eslint-disable-next-line
+    ["@media (max-width:640px)"]: {
+      width: "100%",
+      marginBottom: theme.spacing(2),
+    },
   },
 }));
 
@@ -85,7 +91,7 @@ export default function Hero(props) {
                         "research 🔬",
                         "learn 📖",
                       ]}
-                      className="text-loop"
+                      className={classes.textLoop}
                       interval={2000}
                       mask={true}
                       adjustingSpeed={100}
