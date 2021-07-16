@@ -72,14 +72,19 @@ export default function Hero(props) {
             <Box>
               <Box className={classes.textBox1} component="div">
                 <Typography variant="h2" style={{ fontWeight: 900 }}>
-                  Hi, I'm Brian 👋 <br /> I love to{" "}
+                  Hi, I'm Brian! <br /> I love to{" "}
                   <Typography
                     component="span"
                     variant="h2"
                     style={{ color: props.color, fontWeight: 900 }}
                   >
                     <TextLoop
-                      children={["build.", "research.", "innovate.", "learn."]}
+                      children={[
+                        "design 🎨",
+                        "build 💻",
+                        "research 🔬",
+                        "learn 📖",
+                      ]}
                       className="text-loop"
                       interval={2000}
                       mask={true}
