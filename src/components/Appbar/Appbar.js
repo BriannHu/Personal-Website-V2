@@ -58,6 +58,7 @@ const useStyles = makeStyles((theme) => ({
     transform: "translateY(0)",
     transition: "transform .5s",
     width: "100%",
+    zIndex: 3,
   },
   hide: {
     backgroundColor: "#272725",
@@ -65,6 +66,7 @@ const useStyles = makeStyles((theme) => ({
     transform: "translateY(-100%)",
     transition: "transform .5s",
     width: "100%",
+    zIndex: 3,
   },
   sunIcon: {
     color: "yellow",

@@ -5,6 +5,7 @@ export const ColorMap = {
     creditLink:
       "https://www.youtube.com/watch?v=EJQpezkDuCQ&ab_channel=ArtwithFlo",
     darkImage: "/images/dark_blue_procreate.png",
+    hue: "rgba(211, 48, 47, 0.1)",
   },
   blue: {
     color: "#1876D2",
@@ -12,6 +13,7 @@ export const ColorMap = {
     creditLink:
       "https://www.youtube.com/watch?v=EJQpezkDuCQ&ab_channel=ArtwithFlo",
     darkImage: "/images/dark_blue_procreate.png",
+    hue: "rgba(24, 118, 210, 0.25)",
   },
   green: {
     color: "#04de37",
@@ -19,6 +21,7 @@ export const ColorMap = {
     creditLink:
       "https://www.youtube.com/watch?v=9avxBseVQtI&ab_channel=RishiDraws",
     darkImage: "/images/dark_green_procreate.png",
+    hue: "rgba(4, 222, 55, 0.1)",
   },
   purple: {
     color: "#7B1FA2",
@@ -26,5 +29,6 @@ export const ColorMap = {
     creditLink:
       "https://www.youtube.com/watch?v=EJQpezkDuCQ&ab_channel=ArtwithFlo",
     darkImage: "/images/dark_blue_procreate.png",
+    hue: "rgba(123, 31, 162, 0.1)",
   },
 };

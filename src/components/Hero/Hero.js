@@ -92,7 +92,7 @@ export default function Hero(props) {
     <Box className={classes.rootBox}>
       <Box className={classes.innerBox}>
         <Grid className={classes.outerGridItem} container>
-          <Grid className={classes.innerGridItem} container xs={12} md={6}>
+          <Grid className={classes.innerGridItem} container item xs={12} md={6}>
             <Box>
               <Box className={classes.textBox1} component="div">
                 <Typography variant="h2" style={{ fontWeight: 900 }}>
@@ -119,9 +119,7 @@ export default function Hero(props) {
               </Box>
               <Box className={classes.textBox2} component="div">
                 <Typography variant="h6">
-                  Currently third-year @ McGill University
-                  <br />
-                  Honors Computer Science + Minor in Statistics
+                  Computer Science + Statistics @ McGill University
                 </Typography>
               </Box>
               <Box className={classes.textBox3} component="div">
