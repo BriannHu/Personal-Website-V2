@@ -88,6 +88,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "100%",
     visibility: "visible",
     width: "100vw",
+    zIndex: 3,
   },
   hideRootBox: {
     backgroundColor: "rgb(0, 0, 0, 0.5)",

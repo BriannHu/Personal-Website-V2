@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
   imageBox: {
     position: "relative",
+    zIndex: 0,
   },
   infoIcon: {
     color: "rgba(255, 255, 255, 0.5)",
