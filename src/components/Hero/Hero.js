@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button, Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-import Typical from "react-typical";
+import TextLoop from "react-text-loop";
 
 import GitHubIcon from "@material-ui/icons/GitHub";
 import ResumeIcon from "@material-ui/icons/MenuBook";
@@ -54,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textBoxButton: {
     color: "white",
+    fontSize: "1.1rem",
     marginRight: theme.spacing(2),
     padding: "8px 24px",
     textTransform: "none",
@@ -77,21 +78,13 @@ export default function Hero(props) {
                     variant="h2"
                     style={{ color: props.color, fontWeight: 900 }}
                   >
-                    <Typical
-                      className={classes.typical}
-                      steps={[
-                        "build.",
-                        3000,
-                        "research.",
-                        3000,
-                        "innovate.",
-                        3000,
-                        "learn.",
-                        3000,
-                      ]}
-                      loop={Infinity}
-                      wrapper="p"
-                    />
+                    <TextLoop
+                      children={["build.", "research.", "innovate.", "learn."]}
+                      className="text-loop"
+                      interval={2000}
+                      mask={true}
+                      adjustingSpeed={100}
+                    ></TextLoop>
                   </Typography>
                 </Typography>
               </Box>
