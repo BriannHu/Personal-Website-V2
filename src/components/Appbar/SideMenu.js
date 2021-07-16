@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: theme.spacing(2),
   },
   show: {
-    backgroundColor: "#41413e",
+    backgroundColor: "#343432",
     transform: "translateX(0)",
     transition: "transform 250ms",
     height: "100vh",

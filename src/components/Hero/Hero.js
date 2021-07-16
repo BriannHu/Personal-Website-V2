@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
   },
   textBox2: {
-    color: "grey",
+    color: "#b4b4b1",
     marginBottom: theme.spacing(3),
   },
   textBox3: {

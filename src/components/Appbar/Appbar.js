@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme) => ({
   boxItem1Box1: {
     marginRight: theme.spacing(1),
   },
-  displayIcon: {},
   header: {
     backgroundColor: "#343432",
   },
@@ -54,14 +53,14 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
   },
   show: {
-    backgroundColor: "#343432",
+    backgroundColor: "#272725",
     position: "fixed",
     transform: "translateY(0)",
     transition: "transform .5s",
     width: "100%",
   },
   hide: {
-    backgroundColor: "#343432",
+    backgroundColor: "#272725",
     position: "fixed",
     transform: "translateY(-100%)",
     transition: "transform .5s",
@@ -107,7 +106,7 @@ export default function Appbar(props) {
               </IconButton>
             </Box>
             <Box component="a" className={classes.boxItem1Box2}>
-              BH
+              {/* BH */}
             </Box>
           </Box>
           <Box className={classes.boxItem}>
