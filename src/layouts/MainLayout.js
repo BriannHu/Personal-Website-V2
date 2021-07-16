@@ -16,7 +16,7 @@ export default function MainLayout() {
       case "#1876D2": // blue
         setImage("/images/dark_blue_procreate.png");
         break;
-      case "#398E3D": // green
+      case "#04de37": // green
         setImage("/images/dark_green_procreate.png");
         break;
       case "7B1FA2": // purple

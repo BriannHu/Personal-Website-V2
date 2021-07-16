@@ -1,10 +1,16 @@
 import React, { useState } from "react";
-import { colors, Box, IconButton, Paper } from "@material-ui/core";
+import {
+  colors,
+  Box,
+  IconButton,
+  Paper,
+  useScrollTrigger,
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import MenuIcon from "@material-ui/icons/Menu";
-import MoonIcon from "@material-ui/icons/NightsStay";
-import SunIcon from "@material-ui/icons/WbSunny";
+import MoonIcon from "@material-ui/icons/NightsStayOutlined";
+import SunIcon from "@material-ui/icons/WbSunnyOutlined";
 
 const useStyles = makeStyles((theme) => ({
   boxColorOption: {
@@ -47,6 +53,20 @@ const useStyles = makeStyles((theme) => ({
   moonIcon: {
     color: "white",
   },
+  show: {
+    backgroundColor: "#343432",
+    position: "fixed",
+    transform: "translateY(0)",
+    transition: "transform .5s",
+    width: "100%",
+  },
+  hide: {
+    backgroundColor: "#343432",
+    position: "fixed",
+    transform: "translateY(-100%)",
+    transition: "transform .5s",
+    width: "100%",
+  },
   sunIcon: {
     color: "yellow",
   },
@@ -62,6 +82,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Appbar(props) {
   const classes = useStyles();
+  const trigger = useScrollTrigger();
   const [light, setLight] = useState(false);
 
   const handleLightClick = () => {
@@ -69,7 +90,11 @@ export default function Appbar(props) {
   };
 
   return (
-    <Paper component="header" className={classes.header} square>
+    <Paper
+      component="header"
+      className={trigger ? classes.hide : classes.show}
+      square
+    >
       <Box className={classes.rootBox}>
         <Box className={classes.innerBox}>
           <Box className={classes.boxItem}>
@@ -97,7 +122,7 @@ export default function Appbar(props) {
               <Box
                 className={classes.boxColorOption}
                 style={{ backgroundColor: colors.green[700] }}
-                onClick={() => props.handleColorClick("#398E3D")}
+                onClick={() => props.handleColorClick("#04de37")}
               ></Box>
               <Box
                 className={classes.boxColorOption}

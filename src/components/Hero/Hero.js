@@ -16,8 +16,8 @@ const useStyles = makeStyles((theme) => ({
   innerBox: {
     margin: "0 auto",
     maxWidth: 1236,
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
+    paddingTop: theme.spacing(6),
+    paddingBottom: theme.spacing(6),
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
   },
@@ -97,7 +97,7 @@ export default function Hero(props) {
                 <Typography variant="h6">
                   Currently third-year @ McGill University
                   <br />
-                  Honors Computer Science + Statistics Minor
+                  Honors Computer Science + Minor in Statistics
                 </Typography>
               </Box>
               <Box className={classes.textBox3} component="div">
