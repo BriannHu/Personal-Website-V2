@@ -257,7 +257,7 @@ export default function About(props) {
               variant="outlined"
             />
           </Tooltip>
-          <Tooltip title="< 1 years of experience">
+          <Tooltip title="< 1 year of experience">
             <Chip
               icon={<FamiliarIcon style={{ color: "#ff9800" }} />}
               label="Familiar"
