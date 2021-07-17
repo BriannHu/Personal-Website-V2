@@ -29,6 +29,6 @@ export const ColorMap = {
     creditLink:
       "https://www.youtube.com/watch?v=EJQpezkDuCQ&ab_channel=ArtwithFlo",
     darkImage: "/images/dark_blue_procreate.png",
-    hue: "rgbq(124, 77, 255, 0.2)",
+    hue: "rgba(124, 77, 255, 0.2)",
   },
 };
