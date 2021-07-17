@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  colors,
-  Box,
-  IconButton,
-  Paper,
-  useScrollTrigger,
-} from "@material-ui/core";
+import { Box, IconButton, Paper, useScrollTrigger } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 import MenuIcon from "@material-ui/icons/Menu";
