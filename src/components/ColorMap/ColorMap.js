@@ -8,7 +8,7 @@ export const ColorMap = {
     hue: "rgba(211, 48, 47, 0.1)",
   },
   blue: {
-    color: "#1876D2",
+    color: "#29b6f6",
     credit: "Art with Flo",
     creditLink:
       "https://www.youtube.com/watch?v=EJQpezkDuCQ&ab_channel=ArtwithFlo",
@@ -24,11 +24,11 @@ export const ColorMap = {
     hue: "rgba(4, 222, 55, 0.1)",
   },
   purple: {
-    color: "#7B1FA2",
+    color: "#7c4dff",
     credit: "Art with Flo",
     creditLink:
       "https://www.youtube.com/watch?v=EJQpezkDuCQ&ab_channel=ArtwithFlo",
     darkImage: "/images/dark_blue_procreate.png",
-    hue: "rgba(123, 31, 162, 0.1)",
+    hue: "rgbq(124, 77, 255, 0.2)",
   },
 };
