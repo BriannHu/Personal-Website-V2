@@ -41,6 +41,11 @@ export const Languages = [
     blurb: "Recursion is life.",
   },
   {
+    name: "Bash",
+    level: 1,
+    blurb: "[ ] vs. [[ ]]",
+  },
+  {
     name: "R",
     level: 1,
     blurb: "So. Many. Graphs.",
@@ -65,7 +70,7 @@ export const Technologies = [
   },
   {
     name: "Unix/Linux",
-    level: 3,
+    level: 2,
     blurb: "rm -rf * ...oops",
   },
   {
