@@ -94,7 +94,7 @@ export const ExperienceItems = [
     imageLink: "/images/experience/mcgill2.jpeg",
     roleTitle: "Research Assistant",
     roleLocation: "Distributed Systems Information Lab",
-    roleDate: "September 2020 - December 2021",
+    roleDate: "September 2020 - December 2020",
     tags: [
       {
         name: "Python",
