@@ -2,7 +2,7 @@ export const ExperienceItems = [
   {
     type: "work", // either school or work
     orientation: "left", // refers to which side text is on
-    imageLink: "/images/mcgill.jpg",
+    imageLink: "/images/experience/mcgill.jpg",
     roleTitle: "Undergraduate Researcher",
     roleLocation: "Data-Intensive Storage and Computer Systems Lab",
     roleDate: "April 2021 - Present",
@@ -50,7 +50,7 @@ export const ExperienceItems = [
   {
     type: "school", // either school or work
     orientation: "right", // refers to which side image is on
-    imageLink: "/images/discord.png",
+    imageLink: "/images/experience/discord.png",
     roleTitle: "Helpdesk Tutor",
     roleLocation: "McGill Computer Science Undergraduate Society",
     roleDate: "September 2020 - April 2021",
@@ -91,7 +91,7 @@ export const ExperienceItems = [
   {
     type: "work", // either school or work
     orientation: "left", // refers to which side image is on
-    imageLink: "/images/mcgill2.jpeg",
+    imageLink: "/images/experience/mcgill2.jpeg",
     roleTitle: "Research Assistant",
     roleLocation: "Distributed Systems Information Lab",
     roleDate: "September 2020 - December 2021",
