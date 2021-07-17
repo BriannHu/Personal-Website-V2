@@ -94,6 +94,11 @@ export const Technologies = [
     blurb: "My research project focus!",
   },
   {
+    name: "Docker",
+    level: 1,
+    blurb: "Containerization!",
+  },
+  {
     name: "JUnit",
     level: 1,
     blurb: "Testing for days...",
