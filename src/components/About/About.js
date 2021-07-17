@@ -172,8 +172,8 @@ export default function About(props) {
               Statistics minor
             </Typography>{" "}
             . I'm fascinated by the intersection of big data and performant
-            designs, and how it contributes to good software development. <br />{" "}
-            <br />
+            designs, and hope to eventually pursue a career in software
+            development. <br /> <br />
             My interests include AI/ML and cybersecurity, and I strive to
             incorporate these themes in my personal projects. In my spare time,
             I enjoy both participate in hackathons as well as tutoring others on
