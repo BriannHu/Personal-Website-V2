@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import About from "../components/About/About";
 import Appbar from "../components/Appbar/Appbar";
+import Experience from "../components/Experience/Experience";
 import Hero from "../components/Hero/Hero";
 import SideMenu from "../components/Appbar/SideMenu";
 
@@ -74,6 +75,7 @@ export default function MainLayout() {
         image={image}
       />
       <About color={color} hue={hue} />
+      <Experience color={color} />
     </BrowserRouter>
   );
 }
