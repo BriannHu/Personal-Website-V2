@@ -239,15 +239,13 @@ export default function About(props) {
           >
             Here are the languages, tools and technologies I've picked up along
             the way... <br />
-            <Typography
-              className={classes.hoverDescription}
-              style={{
-                fontWeight: 800,
-              }}
-              variant="subtitle1"
-            >
-              (Hover over each icon!)
-            </Typography>
+          </Typography>
+          <Typography
+            className={classes.hoverDescription}
+            style={{ color: props.color, fontWeight: 800 }}
+            variant="subtitle1"
+          >
+            (Hover over each icon!)
           </Typography>
         </Box>
         <Box className={classes.legendBox}>
@@ -294,10 +292,9 @@ export default function About(props) {
               <Box className={classes.chipSection}>
                 {Languages.map((item, index) => {
                   return (
-                    <Tooltip title={item.blurb}>
+                    <Tooltip title={item.blurb} key={index}>
                       <Chip
                         className={classes.chip}
-                        key={index}
                         label={item.name}
                         variant="outlined"
                         style={{
@@ -328,10 +325,9 @@ export default function About(props) {
               <Box className={classes.chipSection}>
                 {Technologies.map((item, index) => {
                   return (
-                    <Tooltip title={item.blurb}>
+                    <Tooltip title={item.blurb} key={index}>
                       <Chip
                         className={classes.chip}
-                        key={index}
                         label={item.name}
                         variant="outlined"
                         style={{

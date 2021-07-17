@@ -115,14 +115,9 @@ export default function Experience(props) {
         <Grid className={classes.outerGridContainer} container spacing={8}>
           {ExperienceItems.map((item, index) => {
             return (
-              <>
+              <React.Fragment key={index}>
                 {item.orientation === "left" ? (
-                  <Grid
-                    className={classes.outerGridItem}
-                    key={index}
-                    item
-                    xs={12}
-                  >
+                  <Grid className={classes.outerGridItem} item xs={12}>
                     <Grid
                       className={classes.innerGridContainer}
                       container
@@ -201,23 +196,21 @@ export default function Experience(props) {
                             <List>
                               {item.points.map((point, pointID) => {
                                 return (
-                                  <>
-                                    <ListItem
-                                      alignItems="flex-start"
-                                      key={pointID}
-                                    >
-                                      <ListItemIcon style={{ margin: 0 }}>
-                                        <ArrowIcon
-                                          style={{ color: props.color }}
-                                        />
-                                      </ListItemIcon>
-                                      <ListItemText style={{ margin: 0 }}>
-                                        <Typography style={{ fontWeight: 100 }}>
-                                          {point.text}
-                                        </Typography>
-                                      </ListItemText>
-                                    </ListItem>
-                                  </>
+                                  <ListItem
+                                    alignItems="flex-start"
+                                    key={pointID}
+                                  >
+                                    <ListItemIcon style={{ margin: 0 }}>
+                                      <ArrowIcon
+                                        style={{ color: props.color }}
+                                      />
+                                    </ListItemIcon>
+                                    <ListItemText style={{ margin: 0 }}>
+                                      <Typography style={{ fontWeight: 100 }}>
+                                        {point.text}
+                                      </Typography>
+                                    </ListItemText>
+                                  </ListItem>
                                 );
                               })}
                             </List>
@@ -227,12 +220,7 @@ export default function Experience(props) {
                     </Grid>
                   </Grid>
                 ) : (
-                  <Grid
-                    className={classes.outerGridItem}
-                    key={index}
-                    item
-                    xs={12}
-                  >
+                  <Grid className={classes.outerGridItem} item xs={12}>
                     <Grid
                       className={classes.innerGridContainer}
                       container
@@ -272,23 +260,21 @@ export default function Experience(props) {
                             <List>
                               {item.points.map((point, pointID) => {
                                 return (
-                                  <>
-                                    <ListItem
-                                      alignItems="flex-start"
-                                      key={pointID}
-                                    >
-                                      <ListItemIcon style={{ margin: 0 }}>
-                                        <ArrowIcon
-                                          style={{ color: props.color }}
-                                        />
-                                      </ListItemIcon>
-                                      <ListItemText style={{ margin: 0 }}>
-                                        <Typography style={{ fontWeight: 100 }}>
-                                          {point.text}
-                                        </Typography>
-                                      </ListItemText>
-                                    </ListItem>
-                                  </>
+                                  <ListItem
+                                    alignItems="flex-start"
+                                    key={pointID}
+                                  >
+                                    <ListItemIcon style={{ margin: 0 }}>
+                                      <ArrowIcon
+                                        style={{ color: props.color }}
+                                      />
+                                    </ListItemIcon>
+                                    <ListItemText style={{ margin: 0 }}>
+                                      <Typography style={{ fontWeight: 100 }}>
+                                        {point.text}
+                                      </Typography>
+                                    </ListItemText>
+                                  </ListItem>
                                 );
                               })}
                             </List>
@@ -337,7 +323,7 @@ export default function Experience(props) {
                     </Grid>
                   </Grid>
                 )}
-              </>
+              </React.Fragment>
             );
           })}
         </Grid>
