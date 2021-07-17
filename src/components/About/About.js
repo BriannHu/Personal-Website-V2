@@ -4,6 +4,7 @@ import {
   Avatar,
   Box,
   Chip,
+  Divider,
   Grid,
   Paper,
   Tooltip,
@@ -48,6 +49,12 @@ const useStyles = makeStyles((theme) => ({
   descriptionLink: {
     fontWeight: 100,
     textDecoration: "none",
+  },
+  divider: {
+    backgroundColor: "rgba(255, 255, 255, 0.25)",
+    marginLeft: theme.spacing(3),
+    marginRight: theme.spacing(3),
+    marginBottom: theme.spacing(4),
   },
   hoverDescription: {
     // hides text on mobile since users can't hover
@@ -122,7 +129,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     display: "flex",
     flexDirection: "column",
-    marginBottom: theme.spacing(3),
+    marginBottom: theme.spacing(1),
     textAlign: "center",
   },
 }));
@@ -223,6 +230,7 @@ export default function About(props) {
             </Typography>
           </Typography>
         </Box>
+        <Divider className={classes.divider} />
         <Box className={classes.titleBox}>
           <Typography
             className={classes.conclusion}
