@@ -113,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle: {
     fontWeight: 600,
-    marginBottom: theme.spacing(1),
+    marginBottom: theme.spacing(3),
     textTransform: "uppercase",
   },
   titleBox: {
@@ -134,7 +134,7 @@ export default function About(props) {
         <Box className={classes.titleBox}>
           <Typography
             className={classes.subtitle}
-            variant="h6"
+            variant="h3"
             style={{ color: props.color }}
           >
             About
