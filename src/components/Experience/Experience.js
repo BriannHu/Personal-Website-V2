@@ -63,6 +63,9 @@ const useStyles = makeStyles((theme) => ({
   outerGridItem: {
     // border: "1px red solid",
   },
+  listItemIcon: {
+    minWidth: 40,
+  },
   paperTextBox: {
     color: "white",
     marginLeft: theme.spacing(2),
@@ -200,7 +203,10 @@ export default function Experience(props) {
                                     alignItems="flex-start"
                                     key={pointID}
                                   >
-                                    <ListItemIcon style={{ margin: 0 }}>
+                                    <ListItemIcon
+                                      className={classes.listItemIcon}
+                                      style={{ margin: 0 }}
+                                    >
                                       <ArrowIcon
                                         style={{ color: props.color }}
                                       />
@@ -264,7 +270,10 @@ export default function Experience(props) {
                                     alignItems="flex-start"
                                     key={pointID}
                                   >
-                                    <ListItemIcon style={{ margin: 0 }}>
+                                    <ListItemIcon
+                                      className={classes.listItemIcon}
+                                      style={{ margin: 0 }}
+                                    >
                                       <ArrowIcon
                                         style={{ color: props.color }}
                                       />
