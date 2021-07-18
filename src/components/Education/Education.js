@@ -1,10 +1,54 @@
 import React from "react";
 
-import { Box, Grid, Paper, Typography } from "@material-ui/core";
+import {
+  Accordion,
+  AccordionDetails,
+  Box,
+  Grid,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Paper,
+  Typography,
+} from "@material-ui/core";
+import MuiAccordionSummary from "@material-ui/core/AccordionSummary";
+import { CSItems, MathItems } from "./CourseItems";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ArrowIcon from "@material-ui/icons/ArrowRightAltOutlined";
 
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles, withStyles } from "@material-ui/core/styles";
+
+const AccordionSummary = withStyles({
+  root: {
+    flexDirection: "column",
+  },
+  content: {
+    marginBottom: 0,
+  },
+  expandIcon: {
+    marginRight: 0,
+    paddingTop: 0,
+  },
+})(MuiAccordionSummary);
 
 const useStyles = makeStyles((theme) => ({
+  accordion: {
+    backgroundColor: "inherit",
+    "&::before": {
+      display: "none",
+    },
+  },
+  accordionDetails: {
+    color: "white",
+  },
+  accordionGridItem: {
+    textAlign: "center",
+  },
+  accordionGridSubtitle: {
+    fontWeight: 600,
+    textTransform: "uppercase",
+  },
   innerBox: {
     margin: "0 auto",
     maxWidth: 1236,
@@ -12,6 +56,16 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(8),
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
+  },
+  listContainer: {
+    paddingLeft: theme.spacing(10),
+    // eslint-disable-next-line
+    ["@media (max-width:960px)"]: {
+      paddingLeft: theme.spacing(0),
+    },
+  },
+  listItemIcon: {
+    minWidth: 40,
   },
   mcgillLogo: {
     maxWidth: 80,
@@ -21,7 +75,9 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     display: "flex",
     flexDirection: "column",
-    padding: theme.spacing(4),
+    paddingTop: theme.spacing(4),
+    paddingLeft: theme.spacing(4),
+    paddingRight: theme.spacing(4),
   },
   paperDate: {
     fontWeight: 100,
@@ -119,6 +175,73 @@ export default function Education(props) {
             Dean's List, Faculty of Science Scholarship, MES bourses
             d'excellences
           </Typography>
+          <Accordion className={classes.accordion} elevation={0}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon style={{ color: props.color }} />}
+            >
+              <Typography style={{ color: props.color, fontWeight: 100 }}>
+                Relevant Coursework
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails className={classes.accordionDetails}>
+              <Grid container spacing={2}>
+                <Grid className={classes.accordionGridItem} item xs={12} md={6}>
+                  <Typography
+                    className={classes.accordionGridSubtitle}
+                    style={{ color: props.color }}
+                  >
+                    Computer Science
+                  </Typography>
+                  <List className={classes.listContainer}>
+                    {CSItems.map((item, index) => {
+                      return (
+                        <ListItem alignItems="flex-start" key={index}>
+                          <ListItemIcon
+                            className={classes.listItemIcon}
+                            style={{ margin: 0 }}
+                          >
+                            <ArrowIcon style={{ color: props.color }} />
+                          </ListItemIcon>
+                          <ListItemText style={{ margin: 0 }}>
+                            <Typography style={{ fontWeight: 100 }}>
+                              {item.name}
+                            </Typography>
+                          </ListItemText>
+                        </ListItem>
+                      );
+                    })}
+                  </List>
+                </Grid>
+                <Grid className={classes.accordionGridItem} item xs={12} md={6}>
+                  <Typography
+                    className={classes.accordionGridSubtitle}
+                    style={{ color: props.color }}
+                  >
+                    Mathematics
+                  </Typography>
+                  <List className={classes.listContainer}>
+                    {MathItems.map((item, index) => {
+                      return (
+                        <ListItem alignItems="flex-start" key={index}>
+                          <ListItemIcon
+                            className={classes.listItemIcon}
+                            style={{ margin: 0 }}
+                          >
+                            <ArrowIcon style={{ color: props.color }} />
+                          </ListItemIcon>
+                          <ListItemText style={{ margin: 0 }}>
+                            <Typography style={{ fontWeight: 100 }}>
+                              {item.name}
+                            </Typography>
+                          </ListItemText>
+                        </ListItem>
+                      );
+                    })}
+                  </List>
+                </Grid>
+              </Grid>
+            </AccordionDetails>
+          </Accordion>
         </Paper>
       </Box>
     </Box>
