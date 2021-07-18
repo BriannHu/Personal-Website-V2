@@ -19,7 +19,7 @@ export const ProjectMap = {
 
 export const ProjectItems = [
   {
-    projectName: "Marathonizer",
+    projectName: "Run.Trackr",
     projectType: 1,
     imageLink: "/images/projects/marathonizer.png",
     projectDescription:
