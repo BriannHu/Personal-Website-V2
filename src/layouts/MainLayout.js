@@ -5,6 +5,7 @@ import About from "../components/About/About";
 import Appbar from "../components/Appbar/Appbar";
 import Experience from "../components/Experience/Experience";
 import Hero from "../components/Hero/Hero";
+import Projects from "../components/Projects/Projects";
 import SideMenu from "../components/Appbar/SideMenu";
 
 import * as colors from "../constants/Colors";
@@ -76,6 +77,7 @@ export default function MainLayout() {
       />
       <About color={color} hue={hue} />
       <Experience color={color} />
+      <Projects color={color} />
     </BrowserRouter>
   );
 }
