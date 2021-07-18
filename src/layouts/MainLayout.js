@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import About from "../components/About/About";
 import Appbar from "../components/Appbar/Appbar";
+import Education from "../components/Education/Education";
 import Experience from "../components/Experience/Experience";
 import Hero from "../components/Hero/Hero";
 import Projects from "../components/Projects/Projects";
@@ -78,6 +79,7 @@ export default function MainLayout() {
       <About color={color} hue={hue} />
       <Experience color={color} />
       <Projects color={color} />
+      <Education color={color} />
     </BrowserRouter>
   );
 }
