@@ -57,6 +57,12 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(1),
     paddingRight: theme.spacing(1),
   },
+  innerGridContainer2: {
+    paddingLeft: theme.spacing(1),
+    paddingRight: theme.spacing(1),
+    // eslint-disable-next-line
+    ["@media (max-width:960px)"]: { flexDirection: "column-reverse" },
+  },
   outerGridContainer: {
     color: "white",
   },
@@ -228,7 +234,7 @@ export default function Experience(props) {
                 ) : (
                   <Grid className={classes.outerGridItem} item xs={12}>
                     <Grid
-                      className={classes.innerGridContainer}
+                      className={classes.innerGridContainer2}
                       container
                       spacing={4}
                     >
