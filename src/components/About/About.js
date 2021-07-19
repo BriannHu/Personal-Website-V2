@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
   innerBox: {
     margin: "0 auto",
     maxWidth: 1236,
-    paddingTop: theme.spacing(8),
+    paddingTop: theme.spacing(6),
     paddingBottom: theme.spacing(8),
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
