@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     ["@media (max-width:960px)"]: { display: "none" },
   },
   infoIcon: {
-    color: "rgba(255, 255, 255, 0.5)",
+    color: (props) => props.secondaryText,
     position: "absolute",
     top: "10%",
     right: "8%", // hides text on mobile since users can't hover
