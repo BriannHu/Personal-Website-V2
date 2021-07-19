@@ -85,6 +85,7 @@ const useStyles = makeStyles((theme) => ({
   },
   rootBox: {
     backgroundColor: (props) => props.secondaryBackground,
+    transition: "all 0.25s ease-in-out 0s",
   },
   subtitle: {
     fontWeight: 600,
@@ -156,7 +157,10 @@ export default function Projects(props) {
                         <Typography
                           className={classes.projectName}
                           gutterBottom
-                          style={{ color: props.secondaryText }}
+                          style={{
+                            color: props.secondaryText,
+                            transition: "all 0.25s ease-in-out 0s",
+                          }}
                           variant="h5"
                         >
                           {item.projectName}

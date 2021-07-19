@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   boxColorSelect: {
     backgroundColor: (props) => props.primaryBackground,
+    transition: "all 0.25s ease-in-out 0s",
     borderRadius: theme.spacing(4),
     display: "flex",
     padding: theme.spacing(1),
@@ -30,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
   header: {
     backgroundColor: (props) => props.secondaryBackground,
+    transition: "all 0.25s ease-in-out 0s",
   },
   iconButton: {
     marginLeft: theme.spacing(1),
@@ -45,17 +47,17 @@ const useStyles = makeStyles((theme) => ({
   },
   show: {
     backgroundColor: (props) => props.secondaryBackground,
+    transition: "all 0.25s ease-in-out 0s",
     position: "fixed",
     transform: "translateY(0)",
-    transition: "transform .5s",
     width: "100%",
     zIndex: 3,
   },
   hide: {
     backgroundColor: (props) => props.secondaryBackground,
+    transition: "all 0.25s ease-in-out 0s",
     position: "fixed",
     transform: "translateY(-100%)",
-    transition: "transform .5s",
     width: "100%",
     zIndex: 3,
   },

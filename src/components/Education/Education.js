@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
   },
   accordionDetails: {
     color: (props) => props.primaryText,
+    transition: "all 0.25s ease-in-out 0s",
   },
   accordionGridItem: {
     textAlign: "center",
@@ -69,12 +70,10 @@ const useStyles = makeStyles((theme) => ({
   listItemIcon: {
     minWidth: 40,
   },
-  mcgillLogo: {
-    maxWidth: 80,
-  },
   paperContainer: {
     backgroundColor: (props) => props.tertiaryBackground,
     color: (props) => props.primaryText,
+    transition: "all 0.25s ease-in-out 0s",
     display: "flex",
     flexDirection: "column",
     paddingTop: theme.spacing(4),
@@ -100,6 +99,7 @@ const useStyles = makeStyles((theme) => ({
   },
   rootBox: {
     backgroundColor: (props) => props.primaryBackground,
+    transition: "all 0.25s ease-in-out 0s",
   },
   subtitle: {
     fontWeight: 600,
@@ -136,7 +136,7 @@ export default function Education(props) {
         </Box>
         <Paper
           className={classes.paperContainer}
-          data-aos="fade-up"
+          data-aos="fade-up" // causes transition applied in styles to be negated (when changing theme color)
           data-aos-once
         >
           <Grid

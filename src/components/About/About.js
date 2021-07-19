@@ -45,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
   },
   description: {
     color: (props) => props.primaryText,
+    transition: "all 0.25s ease-in-out 0s",
     fontWeight: 100,
     maxWidth: 960,
   },
@@ -54,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
   },
   divider: {
     backgroundColor: (props) => props.secondaryText,
+    transition: "all 0.25s ease-in-out 0s",
     marginLeft: theme.spacing(3),
     marginRight: theme.spacing(3),
     marginBottom: theme.spacing(4),
@@ -100,6 +102,7 @@ const useStyles = makeStyles((theme) => ({
   gridItemPaper: {
     alignItems: "center",
     backgroundColor: (props) => props.tertiaryBackground,
+    transition: "all 0.25s ease-in-out 0s",
     borderRadius: 16,
     display: "flex",
     flexDirection: "column",
@@ -109,6 +112,7 @@ const useStyles = makeStyles((theme) => ({
   },
   gridItemSubtitle: {
     color: (props) => props.primaryText,
+    transition: "all 0.25s ease-in-out 0s",
     fontWeight: 600,
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
@@ -121,6 +125,7 @@ const useStyles = makeStyles((theme) => ({
   },
   rootBox: {
     backgroundColor: (props) => props.secondaryBackground,
+    transition: "all 0.25s ease-in-out 0s",
   },
   subtitle: {
     fontWeight: 600,
@@ -401,6 +406,7 @@ export default function About(props) {
                       style={{
                         borderColor: props.primaryText,
                         color: props.primaryText,
+                        transition: "all 0.25s ease-in-out 0s",
                       }}
                     />
                   );

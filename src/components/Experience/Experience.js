@@ -67,6 +67,7 @@ const useStyles = makeStyles((theme) => ({
   },
   outerGridContainer: {
     color: (props) => props.primaryText,
+    transition: "all 0.25s ease-in-out 0s",
   },
   outerGridItem: {
     // border: "1px red solid",
@@ -94,6 +95,7 @@ const useStyles = makeStyles((theme) => ({
   },
   rootBox: {
     backgroundColor: (props) => props.primaryBackground,
+    transition: "all 0.25s ease-in-out 0s",
   },
   subtitle: {
     fontWeight: 600,

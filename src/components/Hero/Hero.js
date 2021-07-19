@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   infoIcon: {
     color: (props) => props.secondaryText,
+    transition: "all 0.25s ease-in-out 0s",
     position: "absolute",
     right: 0,
   },
@@ -49,10 +50,12 @@ const useStyles = makeStyles((theme) => ({
   },
   textBox1: {
     color: (props) => props.primaryText,
+    transition: "all 0.25s ease-in-out 0s",
     marginBottom: theme.spacing(2),
   },
   textBox2: {
     color: (props) => props.secondaryText,
+    transition: "all 0.25s ease-in-out 0s",
     marginBottom: theme.spacing(3),
   },
   textBox3: {
@@ -66,6 +69,7 @@ const useStyles = makeStyles((theme) => ({
   },
   rootBox: {
     backgroundColor: (props) => props.primaryBackground,
+    transition: "all 0.25s ease-in-out 0s",
   },
   rootContainer: {
     marginTop: theme.spacing(-4),

@@ -29,11 +29,13 @@ const useStyles = makeStyles((theme) => ({
   },
   contactFooterText: {
     color: (props) => props.primaryText,
+    transition: "all 0.25s ease-in-out 0s",
     fontWeight: 100,
   },
   gridItem: {
     alignItems: "center",
     color: (props) => props.primaryText,
+    transition: "all 0.25s ease-in-out 0s",
     display: "flex",
     flexDirection: "column",
   },
@@ -48,6 +50,7 @@ const useStyles = makeStyles((theme) => ({
   },
   rootBox: {
     backgroundColor: (props) => props.secondaryBackground,
+    transition: "all 0.25s ease-in-out 0s",
   },
   subtitle: {
     fontWeight: 600,
