@@ -89,7 +89,7 @@ export default function Hero(props) {
   const classes = useStyles();
 
   return (
-    <Box className={classes.rootBox}>
+    <Box className={classes.rootBox} id="/">
       <Box className={classes.innerBox}>
         <Grid className={classes.outerGridItem} container>
           <Grid className={classes.innerGridItem} container item xs={12} md={6}>

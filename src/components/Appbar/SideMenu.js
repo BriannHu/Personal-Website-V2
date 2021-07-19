@@ -43,8 +43,10 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 800,
   },
   linkItem: {
+    color: "white",
     cursor: "pointer",
     marginBottom: theme.spacing(0.5),
+    textDecoration: "none",
   },
   linkItemText: {
     fontWeight: 100,
@@ -111,7 +113,7 @@ export default function SideMenu(props) {
             </IconButton>
           </Grid>
           <Grid className={classes.linkWrapper}>
-            <Box className={classes.linkBox}>
+            <Box className={classes.linkBox} onClick={props.handleMenuClick}>
               <Box className={classes.linkHeader}>
                 <Typography
                   className={classes.linkHeaderText}
@@ -122,7 +124,12 @@ export default function SideMenu(props) {
               </Box>
               {SiteMenuItems.map((item, index) => {
                 return (
-                  <Box className={classes.linkItem} key={index}>
+                  <Box
+                    component="a"
+                    className={classes.linkItem}
+                    key={index}
+                    href={item.location}
+                  >
                     <Typography
                       className={classes.linkItemText}
                       variant="subtitle1"

@@ -138,7 +138,7 @@ export default function About(props) {
   const classes = useStyles();
 
   return (
-    <Box className={classes.rootBox}>
+    <Box className={classes.rootBox} id="about">
       <Box className={classes.innerBox}>
         <Box className={classes.titleBox}>
           <Typography

@@ -116,7 +116,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Education(props) {
   const classes = useStyles();
   return (
-    <Box className={classes.rootBox}>
+    <Box className={classes.rootBox} id="education">
       <Box className={classes.innerBox}>
         <Box className={classes.titleBox}>
           {" "}

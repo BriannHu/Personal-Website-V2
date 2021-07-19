@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Contact(props) {
   const classes = useStyles();
   return (
-    <Box className={classes.rootBox}>
+    <Box className={classes.rootBox} id="contact">
       <Box className={classes.innerBox}>
         {" "}
         <Box className={classes.titleBox}>
@@ -152,7 +152,7 @@ export default function Contact(props) {
           </Grid>
         </Grid>
         <Box className={classes.contactFooter}>
-          <IconButton>
+          <IconButton href="/">
             {" "}
             <ExpandLessIcon fontSize="large" style={{ color: props.color }} />
           </IconButton>

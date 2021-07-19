@@ -1,5 +1,6 @@
 .App {
   font-family: "Gilroy";
+  scroll-behavior: smooth;
 }
 
 @font-face {

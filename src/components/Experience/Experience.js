@@ -110,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Experience(props) {
   const classes = useStyles();
   return (
-    <Box className={classes.rootBox}>
+    <Box className={classes.rootBox} id="experience">
       <Box className={classes.innerBox}>
         <Box className={classes.titleBox}>
           <Typography

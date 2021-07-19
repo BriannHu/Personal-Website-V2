@@ -13,6 +13,8 @@ import SideMenu from "../components/Appbar/SideMenu";
 import * as colors from "../constants/Colors";
 import { ColorMap } from "../components/ColorMap/ColorMap";
 
+import "./MainLayout.css";
+
 export default function MainLayout() {
   const [active, setActive] = useState(false);
   const [color, setColor] = useState(ColorMap[colors.BLUE].color);
@@ -64,7 +66,7 @@ export default function MainLayout() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter id="root">
       <Appbar
         handleColorClick={handleColorClick}
         handleMenuClick={handleMenuClick}
