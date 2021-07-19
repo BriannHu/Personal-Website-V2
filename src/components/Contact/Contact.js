@@ -11,7 +11,7 @@ import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 
 const useStyles = makeStyles((theme) => ({
   boxLink: {
-    color: "white",
+    color: (props) => props.primaryText,
     textAlign: "center",
     textDecoration: "none",
     transition: "all 0.25s ease-in-out 0s",
@@ -28,12 +28,12 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(4),
   },
   contactFooterText: {
-    color: "white",
+    color: (props) => props.primaryText,
     fontWeight: 100,
   },
   gridItem: {
     alignItems: "center",
-    color: "white",
+    color: (props) => props.primaryText,
     display: "flex",
     flexDirection: "column",
   },
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: theme.spacing(2),
   },
   rootBox: {
-    backgroundColor: "#343432",
+    backgroundColor: (props) => props.secondaryBackground,
   },
   subtitle: {
     fontWeight: 600,
@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Contact(props) {
-  const classes = useStyles();
+  const classes = useStyles(props);
   return (
     <Box className={classes.rootBox} id="contact">
       <Box className={classes.innerBox}>

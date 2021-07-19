@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   accordionDetails: {
-    color: "white",
+    color: (props) => props.primaryText,
   },
   accordionGridItem: {
     textAlign: "center",
@@ -73,8 +73,8 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: 80,
   },
   paperContainer: {
-    backgroundColor: "#42423e",
-    color: "white",
+    backgroundColor: (props) => props.tertiaryBackground,
+    color: (props) => props.primaryText,
     display: "flex",
     flexDirection: "column",
     paddingTop: theme.spacing(4),
@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
   },
   rootBox: {
-    backgroundColor: "#1F1F1E",
+    backgroundColor: (props) => props.primaryBackground,
   },
   subtitle: {
     fontWeight: 600,
@@ -116,7 +116,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Education(props) {
-  const classes = useStyles();
+  const classes = useStyles(props);
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);

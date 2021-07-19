@@ -48,9 +48,9 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: theme.spacing(2),
   },
   outerCardContainer: {
-    backgroundColor: "#42423e",
+    backgroundColor: (props) => props.tertiaryBackground,
     borderRadius: 8,
-    color: "white",
+    color: (props) => props.primaryText,
     display: "flex",
     flexDirection: "column",
     height: "100%",
@@ -59,9 +59,6 @@ const useStyles = makeStyles((theme) => ({
       transform: "translateY(-1%)",
       transition: "all 0.25s ease-in-out 0s",
     },
-  },
-  outerGridContainer: {
-    color: "white",
   },
   outerBoxContainer: {
     height: "100%",
@@ -87,7 +84,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
   },
   rootBox: {
-    backgroundColor: "#343432",
+    backgroundColor: (props) => props.secondaryBackground,
   },
   subtitle: {
     fontWeight: 600,
@@ -104,7 +101,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Projects(props) {
-  const classes = useStyles();
+  const classes = useStyles(props);
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -159,7 +156,7 @@ export default function Projects(props) {
                         <Typography
                           className={classes.projectName}
                           gutterBottom
-                          style={{ color: "rgba(255, 255, 255, 0.8" }}
+                          style={{ color: props.secondaryText }}
                           variant="h5"
                         >
                           {item.projectName}

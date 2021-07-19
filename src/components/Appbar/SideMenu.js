@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-end",
   },
   closeIcon: {
-    color: "white",
+    color: (props) => props.primaryText,
   },
   innerBox: {
     display: "flex",
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 800,
   },
   linkItem: {
-    color: "white",
+    color: (props) => props.primaryText,
     cursor: "pointer",
     marginBottom: theme.spacing(0.5),
     textDecoration: "none",
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 100,
   },
   linkWrapper: {
-    color: "white",
+    color: (props) => props.primaryText,
     display: "flex",
     flexDirection: "column",
     flexGrow: 1,
@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: theme.spacing(2),
   },
   show: {
-    backgroundColor: "#343432",
+    backgroundColor: (props) => props.secondaryBackground,
     transform: "translateX(0)",
     transition: "transform 250ms",
     height: "100vh",
@@ -101,7 +101,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SideMenu(props) {
-  const classes = useStyles();
+  const classes = useStyles(props);
 
   return (
     <>

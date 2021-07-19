@@ -20,7 +20,7 @@ export const ColorMap = {
     credit: "Rishi Draws",
     creditLink:
       "https://www.youtube.com/watch?v=9avxBseVQtI&ab_channel=RishiDraws",
-    darkImage: "/images/dark_green_procreate.png",
+    darkImage: "/images/transparent_green_procreate.png",
     hue: "rgba(4, 222, 55, 0.1)",
   },
   purple: {

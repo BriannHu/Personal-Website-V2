@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 100,
   },
   description: {
-    color: "white",
+    color: (props) => props.primaryText,
     fontWeight: 100,
     maxWidth: 960,
   },
@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
   },
   divider: {
-    backgroundColor: "rgba(255, 255, 255, 0.25)",
+    backgroundColor: (props) => props.secondaryText,
     marginLeft: theme.spacing(3),
     marginRight: theme.spacing(3),
     marginBottom: theme.spacing(4),
@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
   },
   gridItemPaper: {
     alignItems: "center",
-    backgroundColor: "#42423e",
+    backgroundColor: (props) => props.tertiaryBackground,
     borderRadius: 16,
     display: "flex",
     flexDirection: "column",
@@ -108,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   gridItemSubtitle: {
-    color: "white",
+    color: (props) => props.primaryText,
     fontWeight: 600,
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
@@ -120,7 +120,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 auto",
   },
   rootBox: {
-    backgroundColor: "#343432",
+    backgroundColor: (props) => props.secondaryBackground,
   },
   subtitle: {
     fontWeight: 600,
@@ -137,7 +137,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function About(props) {
-  const classes = useStyles();
+  const classes = useStyles(props);
 
   useEffect(() => {
     Aos.init({ duration: 800 });
@@ -399,8 +399,8 @@ export default function About(props) {
                       label={item.name}
                       variant="outlined"
                       style={{
-                        borderColor: "white",
-                        color: "white",
+                        borderColor: props.primaryText,
+                        color: props.primaryText,
                       }}
                     />
                   );

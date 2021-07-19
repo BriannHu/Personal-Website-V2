@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 0,
   },
   infoIcon: {
-    color: "rgba(255, 255, 255, 0.5)",
+    color: (props) => props.secondaryText,
     position: "absolute",
     right: 0,
   },
@@ -48,11 +48,11 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
   },
   textBox1: {
-    color: "white",
+    color: (props) => props.primaryText,
     marginBottom: theme.spacing(2),
   },
   textBox2: {
-    color: "#b4b4b1",
+    color: (props) => props.secondaryText,
     marginBottom: theme.spacing(3),
   },
   textBox3: {
@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 0,
   },
   rootBox: {
-    backgroundColor: "#1F1F1E",
+    backgroundColor: (props) => props.primaryBackground,
   },
   rootContainer: {
     marginTop: theme.spacing(-4),
@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Hero(props) {
-  const classes = useStyles();
+  const classes = useStyles(props);
 
   return (
     <Box className={classes.rootBox} id="/">

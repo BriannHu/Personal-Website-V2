@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     ["@media (max-width:960px)"]: { flexDirection: "column-reverse" },
   },
   outerGridContainer: {
-    color: "white",
+    color: (props) => props.primaryText,
   },
   outerGridItem: {
     // border: "1px red solid",
@@ -93,7 +93,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 500,
   },
   rootBox: {
-    backgroundColor: "#1F1F1E",
+    backgroundColor: (props) => props.primaryBackground,
   },
   subtitle: {
     fontWeight: 600,
@@ -110,7 +110,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Experience(props) {
-  const classes = useStyles();
+  const classes = useStyles(props);
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);

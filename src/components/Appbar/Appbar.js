@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Box, IconButton, Paper, useScrollTrigger } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     width: "20px",
   },
   boxColorSelect: {
-    backgroundColor: "#1F1F1E",
+    backgroundColor: (props) => props.primaryBackground,
     borderRadius: theme.spacing(4),
     display: "flex",
     padding: theme.spacing(1),
@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(1),
   },
   header: {
-    backgroundColor: "#343432",
+    backgroundColor: (props) => props.secondaryBackground,
   },
   iconButton: {
     marginLeft: theme.spacing(1),
@@ -40,14 +40,11 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     width: "100%",
   },
-  menuIcon: {
-    color: "white",
-  },
-  moonIcon: {
-    color: "white",
+  icon: {
+    color: (props) => props.primaryText,
   },
   show: {
-    backgroundColor: "#272725",
+    backgroundColor: (props) => props.secondaryBackground,
     position: "fixed",
     transform: "translateY(0)",
     transition: "transform .5s",
@@ -55,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 3,
   },
   hide: {
-    backgroundColor: "#272725",
+    backgroundColor: (props) => props.secondaryBackground,
     position: "fixed",
     transform: "translateY(-100%)",
     transition: "transform .5s",
@@ -76,13 +73,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Appbar(props) {
-  const classes = useStyles();
+  const classes = useStyles(props);
   const trigger = useScrollTrigger();
-  const [light, setLight] = useState(false);
-
-  const handleLightClick = () => {
-    setLight(!light);
-  };
 
   return (
     <Paper
@@ -95,7 +87,7 @@ export default function Appbar(props) {
           <Box className={classes.boxItem}>
             <Box className={classes.boxItem1Box1}>
               <IconButton
-                className={classes.menuIcon}
+                className={classes.icon}
                 onClick={props.handleMenuClick}
               >
                 <MenuIcon />
@@ -130,12 +122,12 @@ export default function Appbar(props) {
             </Box>
             <IconButton
               className={classes.iconButton}
-              onClick={handleLightClick}
+              onClick={() => props.handleThemeClick(props.dark)}
             >
-              {light ? (
-                <MoonIcon className={classes.moonIcon} />
+              {props.dark ? (
+                <SunIcon className={classes.icon} />
               ) : (
-                <SunIcon className={classes.sunIcon} />
+                <MoonIcon className={classes.icon} />
               )}
             </IconButton>
           </Box>
