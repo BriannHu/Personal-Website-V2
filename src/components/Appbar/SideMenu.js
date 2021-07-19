@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import {
   Box,
   Fade,
@@ -151,7 +151,15 @@ export default function SideMenu(props) {
               </Box>
               {SocialMenuItems.map((item, index) => {
                 return (
-                  <Box className={classes.linkItem} key={index}>
+                  <Box
+                    className={classes.linkItem}
+                    key={index}
+                    component={Link}
+                    to={{
+                      pathname: `${item.location}`,
+                    }}
+                    target="_blank"
+                  >
                     <Typography
                       className={classes.linkItemText}
                       variant="subtitle1"

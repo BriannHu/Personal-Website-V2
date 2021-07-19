@@ -29,18 +29,18 @@ export const SiteMenuItems = [
 export const SocialMenuItems = [
   {
     name: "LinkedIn",
-    color: "blue",
+    location: "https://www.linkedin.com/in/briannhu/",
   },
   {
     name: "Github",
-    color: "green",
+    location: "https://github.com/BriannHu",
   },
   {
     name: "Instagram",
-    color: "red",
+    location: "https://www.instagram.com/briann.hu/",
   },
   {
     name: "Facebook",
-    color: "purple",
+    location: "https://www.facebook.com/brianhu.mcgill/",
   },
 ];
