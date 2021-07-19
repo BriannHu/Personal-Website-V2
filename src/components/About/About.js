@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   Avatar,
   Box,
@@ -136,6 +138,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function About(props) {
   const classes = useStyles();
+
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
 
   return (
     <Box className={classes.rootBox} id="about">
@@ -275,7 +281,15 @@ export default function About(props) {
           </Tooltip>
         </Box>
         <Grid className={classes.gridContainer} container spacing={4}>
-          <Grid className={classes.gridItem} container item xs={12} md={4}>
+          <Grid
+            className={classes.gridItem}
+            container
+            data-aos="fade-up"
+            data-aos-once
+            item
+            xs={12}
+            md={4}
+          >
             <Paper className={classes.gridItemPaper}>
               <Avatar
                 className={classes.gridAvatar}
@@ -308,7 +322,16 @@ export default function About(props) {
               </Box>
             </Paper>
           </Grid>
-          <Grid className={classes.gridItem} container item xs={12} md={4}>
+          <Grid
+            className={classes.gridItem}
+            container
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-once
+            item
+            xs={12}
+            md={4}
+          >
             <Paper className={classes.gridItemPaper}>
               <Avatar
                 className={classes.gridAvatar}
@@ -341,7 +364,16 @@ export default function About(props) {
               </Box>
             </Paper>
           </Grid>
-          <Grid className={classes.gridItem} container item xs={12} md={4}>
+          <Grid
+            className={classes.gridItem}
+            container
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-once
+            item
+            xs={12}
+            md={4}
+          >
             <Paper className={classes.gridItemPaper}>
               <Avatar
                 className={classes.gridAvatar}

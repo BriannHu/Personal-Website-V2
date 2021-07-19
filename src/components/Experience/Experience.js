@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import {
   Avatar,
   Box,
@@ -109,6 +111,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Experience(props) {
   const classes = useStyles();
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
+
   return (
     <Box className={classes.rootBox} id="experience">
       <Box className={classes.innerBox}>
@@ -134,6 +140,8 @@ export default function Experience(props) {
                     >
                       <Grid
                         className={classes.innerGridItem}
+                        data-aos="fade-right"
+                        data-aos-once
                         item
                         xs={12}
                         md={6}
@@ -173,6 +181,8 @@ export default function Experience(props) {
                       </Grid>
                       <Grid
                         className={classes.innerGridItem}
+                        data-aos="fade-left"
+                        data-aos-once
                         item
                         xs={12}
                         md={6}
@@ -240,6 +250,8 @@ export default function Experience(props) {
                     >
                       <Grid
                         className={classes.innerGridItem}
+                        data-aos="fade-right"
+                        data-aos-once
                         item
                         xs={12}
                         md={6}
@@ -298,6 +310,8 @@ export default function Experience(props) {
                       </Grid>
                       <Grid
                         className={classes.innerGridItem}
+                        data-aos="fade-left"
+                        data-aos-once
                         item
                         xs={12}
                         md={6}

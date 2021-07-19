@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import {
   Accordion,
@@ -115,6 +117,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Education(props) {
   const classes = useStyles();
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <Box className={classes.rootBox} id="education">
       <Box className={classes.innerBox}>
@@ -128,7 +134,11 @@ export default function Education(props) {
             Education
           </Typography>
         </Box>
-        <Paper className={classes.paperContainer}>
+        <Paper
+          className={classes.paperContainer}
+          data-aos="fade-up"
+          data-aos-once
+        >
           <Grid
             className={classes.outerGridHeader}
             container

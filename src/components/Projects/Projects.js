@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import {
   Box,
@@ -103,6 +105,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Projects(props) {
   const classes = useStyles();
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <Box className={classes.rootBox} id="projects">
       <Box className={classes.innerBox}>
@@ -118,9 +124,13 @@ export default function Projects(props) {
         </Box>
         <Grid className={classes.outerGridContainer} container spacing={4}>
           {ProjectItems.map((item, index) => {
+            const delay = 200 * (index % 3) + 200;
             return (
               <Grid
                 className={classes.gridItem}
+                data-aos="fade-up"
+                data-aos-delay={delay}
+                data-aos-once
                 key={index}
                 item
                 xs={12}
