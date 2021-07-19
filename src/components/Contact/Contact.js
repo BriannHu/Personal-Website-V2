@@ -152,10 +152,12 @@ export default function Contact(props) {
           </Grid>
         </Grid>
         <Box className={classes.contactFooter}>
-          <IconButton href="/">
-            {" "}
-            <ExpandLessIcon fontSize="large" style={{ color: props.color }} />
-          </IconButton>
+          <Box component="a" href={"/"}>
+            <IconButton>
+              {" "}
+              <ExpandLessIcon fontSize="large" style={{ color: props.color }} />
+            </IconButton>
+          </Box>
           <Typography className={classes.contactFooterText}>
             Created by Brian Hu using Material UI. © Brian Hu 2021.
           </Typography>
