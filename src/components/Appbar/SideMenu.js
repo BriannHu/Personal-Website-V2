@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   hide: {
-    backgroundColor: "#41413e",
+    backgroundColor: (props) => props.secondaryBackground,
     transform: "translateX(-100%)",
     transition: "transform 250ms",
     position: "fixed",
