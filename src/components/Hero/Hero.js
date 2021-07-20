@@ -105,7 +105,7 @@ export default function Hero(props) {
 
   return (
     <Box className={classes.rootBox} id="/">
-      <Box className={classes.innerBox}>
+      <Box className={classes.innerBox} id="back-to-top-anchor">
         <Grid className={classes.outerGridItem} container>
           <Grid className={classes.innerGridItem} container item xs={12} md={6}>
             <Box>

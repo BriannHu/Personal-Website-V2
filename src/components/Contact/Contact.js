@@ -68,6 +68,18 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Contact(props) {
   const classes = useStyles(props);
+
+  const handleScrollToTop = (e) => {
+    const anchor = (e.target.ownerDocument || document).querySelector(
+      "#back-to-top-anchor"
+    );
+    console.log(anchor);
+
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
   return (
     <Box className={classes.rootBox} id="contact">
       <Box className={classes.innerBox}>
@@ -155,7 +167,7 @@ export default function Contact(props) {
           </Grid>
         </Grid>
         <Box className={classes.contactFooter}>
-          <Box component="a" href={"/"}>
+          <Box onClick={handleScrollToTop}>
             <IconButton>
               {" "}
               <ExpandLessIcon fontSize="large" style={{ color: props.color }} />
