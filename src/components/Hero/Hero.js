@@ -42,9 +42,14 @@ const useStyles = makeStyles((theme) => ({
   },
   innerGridItem: {
     alignItems: "center",
-    paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(2),
+    paddingLeft: theme.spacing(4),
+    // paddingRight: theme.spacing(2),
     paddingTop: theme.spacing(4),
+    // eslint-disable-next-line
+    ["@media (max-width:640px)"]: {
+      paddingLeft: theme.spacing(2),
+      paddingRight: theme.spacing(2),
+    },
   },
   outerGridItem: {
     display: "flex",
