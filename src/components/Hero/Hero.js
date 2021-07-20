@@ -78,8 +78,13 @@ const useStyles = makeStyles((theme) => ({
     transition: "all 0.25s ease-in-out 0s",
   },
   rootContainer: {
-    // marginTop: theme.spacing(-4),
-    // marginLeft: theme.spacing(-4),
+    marginTop: theme.spacing(-4),
+    marginLeft: theme.spacing(-4),
+    // eslint-disable-next-line
+    ["@media (max-width:640px)"]: {
+      marginTop: theme.spacing(0),
+      marginLeft: theme.spacing(0),
+    },
   },
   textBoxButton: {
     color: "white",
