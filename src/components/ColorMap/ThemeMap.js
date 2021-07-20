@@ -8,7 +8,7 @@ export const ThemeMap = {
   },
   light: {
     primaryBackground: "#F7F9FC",
-    secondaryBackground: "#f2f2f2",
+    secondaryBackground: "#F5F5F5",
     tertiaryBackground: "#FFFFFF",
     primaryText: "#000000",
     secondaryText: "#4d4d4d",
