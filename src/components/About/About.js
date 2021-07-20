@@ -194,8 +194,8 @@ export default function About(props) {
             development. <br /> <br />
             My interests include AI/ML and cybersecurity, and I strive to
             incorporate these themes in my personal projects. In my spare time,
-            I enjoy both participate in hackathons as well as tutoring others on
-            the fundamentals of programming. <br />
+            I enjoy both participating in hackathons as well as tutoring others
+            on the fundamentals of programming. <br />
             <br />
             <Typography></Typography>
             Feel free to check out my{" "}
