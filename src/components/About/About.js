@@ -175,7 +175,7 @@ export default function About(props) {
             >
               Honors Computer Science
             </Typography>{" "}
-            and with a{" "}
+            and a{" "}
             <Typography
               className={classes.descriptionLink}
               component={Link}
