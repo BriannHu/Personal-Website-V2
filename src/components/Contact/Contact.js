@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     transition: "all 0.25s ease-in-out 0s",
     "&:hover": {
-      opacity: 0.5,
+      color: (props) => props.color,
       transform: "translateY(-10%)",
       transition: "all 0.25s ease-in-out 0s",
     },
