@@ -18,7 +18,7 @@ export const CSItems = [
     name: "COMP273 - Introduction to Computer Systems",
   },
   {
-    name: "COMP302 - Programming Languages and Pradigms",
+    name: "COMP302 - Programming Languages and Paradigms",
   },
   {
     name: "COMP303 - Software Design",
