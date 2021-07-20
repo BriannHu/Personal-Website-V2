@@ -182,8 +182,9 @@ export default function Education(props) {
             <Box component="span" style={{ color: props.color }}>
               Awards:
             </Box>{" "}
-            Dean's List, Faculty of Science Scholarship, MES bourses
-            d'excellences
+            Dean's List (2019-20) • Faculty of Science Scholarship (2019-20) •
+            MES bourses d'excellences (2020-21) • Wing Hing Chan Scholarship in
+            Science (2020-21)
           </Typography>
           <Accordion className={classes.accordion} elevation={0}>
             <AccordionSummary
