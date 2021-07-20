@@ -170,7 +170,7 @@ export default function Hero(props) {
           </Grid>
           <Grid className={classes.innerGridItem} item xs={12} md={6}>
             <Box className={classes.imageBox}>
-              <Tooltip title={`Procreate Credit: "Rishi Draws"`} arrow>
+              <Tooltip title={`Procreate Credit: Rishi Draws`} arrow>
                 <IconButton
                   component={Link}
                   className={classes.infoIcon}
