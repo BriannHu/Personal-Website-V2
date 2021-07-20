@@ -134,6 +134,11 @@ export default function Hero(props) {
                     color: props.color,
                   }}
                   variant="outlined"
+                  component={Link}
+                  to={{
+                    pathname: "https://github.com/BriannHu",
+                  }}
+                  target="_blank"
                 >
                   Explore Github <GitHubIcon className={classes.buttonIcon} />
                 </Button>
@@ -141,6 +146,11 @@ export default function Hero(props) {
                   className={classes.textBoxButton}
                   style={{ borderColor: props.color, color: props.color }}
                   variant="outlined"
+                  component={Link}
+                  to={{
+                    pathname: "/resume/BrianHu_Resume.pdf",
+                  }}
+                  target="_blank"
                 >
                   View Resume <ResumeIcon className={classes.buttonIcon} />
                 </Button>
