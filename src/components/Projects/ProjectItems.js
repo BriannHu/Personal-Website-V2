@@ -126,10 +126,10 @@ export const ProjectItems = [
     projectLink: "https://github.com/BriannHu/DISCS-Website",
     tags: [
       {
-        name: "React",
+        name: "React.js",
       },
       {
-        name: "Bootstrap",
+        name: "React-Bootstrap",
       },
       {
         name: "HTML/CSS",
