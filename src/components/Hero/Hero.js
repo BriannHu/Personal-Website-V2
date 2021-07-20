@@ -149,11 +149,14 @@ export default function Hero(props) {
           </Grid>
           <Grid className={classes.innerGridItem} item xs={12} md={6}>
             <Box className={classes.imageBox}>
-              <Tooltip title={`Procreate Credit: ${props.credit}`} arrow>
+              <Tooltip title={`Procreate Credit: "Rishi Draws"`} arrow>
                 <IconButton
                   component={Link}
                   className={classes.infoIcon}
-                  to={{ pathname: `${props.creditLink}` }}
+                  to={{
+                    pathname:
+                      "https://www.youtube.com/watch?v=9avxBseVQtI&ab_channel=RishiDraws",
+                  }}
                   target="_blank"
                 >
                   <InfoIcon />
