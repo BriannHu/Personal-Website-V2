@@ -1,22 +1,3 @@
 .App {
-  font-family: "Gilroy";
   overflow-x: hidden;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-weight: 100;
-  src: local("Gilroy"), url(./fonts/Gilroy-Light.otf) format("opentype");
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-weight: 700;
-  src: local("Gilroy"), url(./fonts/Gilroy-Semibold.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Gilroy";
-  font-weight: 900;
-  src: local("Gilroy"), url(./fonts/Gilroy-ExtraBold.otf) format("opentype");
 }
