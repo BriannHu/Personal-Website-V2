@@ -1,5 +1,24 @@
 export const ExperienceItems = [
   {
+    type: "school", // either school or work
+    orientation: "right", // refers to which side text is on
+    imageLink: "/images/experience/enactus.jpg",
+    roleTitle: "Web & Software Development Coordinator",
+    roleLocation: "Enactus McGill",
+    roleDate: "July 2021 - Present",
+    tags: [
+      {
+        name: "In Progress!",
+        level: 2,
+      },
+    ],
+    points: [
+      {
+        text: "Just getting started, more to come!",
+      },
+    ],
+  },
+  {
     type: "work", // either school or work
     orientation: "left", // refers to which side text is on
     imageLink: "/images/experience/mcgill.jpg",
