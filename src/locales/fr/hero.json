@@ -1,0 +1,14 @@
+{
+  "greeting": "Salut, je suis Brian!",
+  "subgreeting": "J'aime",
+  "description": {
+    "part1": "concevoir",
+    "part2": "construire",
+    "part3": "enquêter",
+    "part4": "apprendre"
+  },
+  "study": "Informatique + Statistiques @ Université McGill",
+  "button1": "Explorer Github",
+  "button2": "Voir le CV",
+  "credit": "Crédit Procreate: Rishi Draws"
+}

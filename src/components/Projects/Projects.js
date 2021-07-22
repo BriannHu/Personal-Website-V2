@@ -15,6 +15,8 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import { ProjectItems, ProjectMap } from "./ProjectItems";
 
+import { useTranslation } from "react-i18next";
+
 const useStyles = makeStyles((theme) => ({
   cardActionArea: {
     alignItems: "flex-end",
@@ -103,6 +105,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Projects(props) {
   const classes = useStyles(props);
+  const { t } = useTranslation();
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -117,7 +121,7 @@ export default function Projects(props) {
             variant="h3"
             style={{ color: props.color }}
           >
-            Projects
+            {t("projects:title")}
           </Typography>
         </Box>
         <Grid className={classes.outerGridContainer} container spacing={4}>
@@ -163,11 +167,11 @@ export default function Projects(props) {
                           }}
                           variant="h5"
                         >
-                          {item.projectName}
+                          {t(item.projectName)}
                         </Typography>
                         <Chip
                           className={classes.projectDescriptionChip}
-                          label={ProjectMap[item.projectType].typeName}
+                          label={t(ProjectMap[item.projectType].typeName)}
                           style={{
                             borderColor: `${
                               ProjectMap[item.projectType].typeColor
@@ -184,7 +188,7 @@ export default function Projects(props) {
                           gutterBottom
                           variant="body2"
                         >
-                          {item.projectDescription}
+                          {t(item.projectDescription)}
                         </Typography>
                       </Box>
                     </CardContent>

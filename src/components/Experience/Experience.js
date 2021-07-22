@@ -22,6 +22,8 @@ import ArrowIcon from "@material-ui/icons/ArrowRightAltOutlined";
 import { ExperienceItems } from "./ExperienceItems";
 import { LevelConversion } from "../About/SkillMaps";
 
+import { useTranslation } from "react-i18next";
+
 const useStyles = makeStyles((theme) => ({
   avatar: {
     marginTop: theme.spacing(3),
@@ -113,6 +115,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Experience(props) {
   const classes = useStyles(props);
+  const { t } = useTranslation();
+
   useEffect(() => {
     Aos.init({ duration: 800 });
   }, []);
@@ -126,7 +130,7 @@ export default function Experience(props) {
             variant="h3"
             style={{ color: props.color }}
           >
-            Experience
+            {t("experience:title")}
           </Typography>
         </Box>
         <Grid className={classes.outerGridContainer} container spacing={8}>
@@ -169,14 +173,14 @@ export default function Experience(props) {
                               className={classes.roleLocation}
                               variant="h5"
                             >
-                              {item.roleLocation}
+                              {t(item.roleLocation)}
                             </Typography>
                             <Typography
                               className={classes.roleDate}
                               gutterBottom
                               variant="subtitle1"
                             >
-                              {item.roleDate}
+                              {t(item.roleDate)}
                             </Typography>
                           </Box>
                         </Paper>
@@ -195,7 +199,7 @@ export default function Experience(props) {
                             gutterBottom
                             variant="h4"
                           >
-                            {item.roleTitle}
+                            {t(item.roleTitle)}
                           </Typography>
                           <Box className={classes.chipBox}>
                             {item.tags.map((tag, tagID) => {
@@ -231,7 +235,7 @@ export default function Experience(props) {
                                     </ListItemIcon>
                                     <ListItemText style={{ margin: 0 }}>
                                       <Typography style={{ fontWeight: 100 }}>
-                                        {point.text}
+                                        {t(point.text)}
                                       </Typography>
                                     </ListItemText>
                                   </ListItem>
@@ -264,7 +268,7 @@ export default function Experience(props) {
                             gutterBottom
                             variant="h4"
                           >
-                            {item.roleTitle}
+                            {t(item.roleTitle)}
                           </Typography>
                           <Box className={classes.chipBox}>
                             {item.tags.map((tag, tagID) => {
@@ -272,7 +276,7 @@ export default function Experience(props) {
                                 <Chip
                                   className={classes.chip}
                                   key={tagID}
-                                  label={tag.name}
+                                  label={t(tag.name)} // CAN REMOVE AFTER, ONLY NECESSARY FOR "IN PROGRESS" TRANSLATION
                                   style={{
                                     borderColor: LevelConversion[tag.level],
                                     color: LevelConversion[tag.level],
@@ -300,7 +304,7 @@ export default function Experience(props) {
                                     </ListItemIcon>
                                     <ListItemText style={{ margin: 0 }}>
                                       <Typography style={{ fontWeight: 100 }}>
-                                        {point.text}
+                                        {t(point.text)}
                                       </Typography>
                                     </ListItemText>
                                   </ListItem>
@@ -339,14 +343,14 @@ export default function Experience(props) {
                               className={classes.roleLocation}
                               variant="h5"
                             >
-                              {item.roleLocation}
+                              {t(item.roleLocation)}
                             </Typography>
                             <Typography
                               className={classes.roleDate}
                               gutterBottom
                               variant="subtitle1"
                             >
-                              {item.roleDate}
+                              {t(item.roleDate)}
                             </Typography>
                           </Box>
                         </Paper>

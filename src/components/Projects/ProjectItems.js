@@ -1,29 +1,28 @@
 export const ProjectMap = {
   0: {
-    typeName: "Hackathon",
+    typeName: "projects:tags.hackathon",
     typeColor: "#ff9800",
   },
   1: {
-    typeName: "Personal",
+    typeName: "projects:tags.personal",
     typeColor: "#00e676",
   },
   2: {
-    typeName: "Academic",
+    typeName: "projects:tags.academic",
     typeColor: "#7c4dff",
   },
   3: {
-    typeName: "Research",
+    typeName: "projects:tags.research",
     typeColor: "#00b0ff",
   },
 };
 
 export const ProjectItems = [
   {
-    projectName: "Run.Trackr",
+    projectName: "projects:projects.project9.name",
     projectType: 1,
     imageLink: "/images/projects/marathonizer.png",
-    projectDescription:
-      "Full-stack MERN application designed to help runners prepare and train for upcoming races. Users can record, visualize and export runs, as well as track their past distance, duration and average pace.",
+    projectDescription: "projects:projects.project9.description",
     projectLink: "https://github.com/BriannHu/MarathonTrainer",
     tags: [
       {
@@ -47,11 +46,10 @@ export const ProjectItems = [
     ],
   },
   {
-    projectName: "ASL Transcriber",
+    projectName: "projects:projects.project8.name",
     projectType: 0,
     imageLink: "/images/projects/asl_transcriber.png",
-    projectDescription:
-      "Application that converts detected ASL gestures to the English alphabet. Users will have time to sign letters for them to appear dynamically on the screen. Includes a bonus phrase! (Hint: 🤟)",
+    projectDescription: "projects:projects.project8.description",
     projectLink: "https://github.com/BriannHu/ASL_Alphabet_Interpretation",
     tags: [
       {
@@ -66,11 +64,10 @@ export const ProjectItems = [
     ],
   },
   {
-    projectName: "NSERC Project",
+    projectName: "projects:projects.project7.name",
     projectType: 3,
     imageLink: "/images/projects/nserc_project.png",
-    projectDescription:
-      "Research project focusing on improving performance of RocksDB on real-time data analytics, by augmenting in-memory data structures. Custom benchmarks simulating social media workloads are tested on the system.",
+    projectDescription: "projects:projects.project7.description",
     projectLink: "https://github.com/BriannHu/NSERC_Project",
     tags: [
       {
@@ -85,11 +82,10 @@ export const ProjectItems = [
     ],
   },
   {
-    projectName: "Personal Site 2.0",
+    projectName: "projects:projects.project6.name",
     projectType: 1,
     imageLink: "/images/projects/personal_website_v2.png",
-    projectDescription:
-      "Second iteration of my personal portfolio website! Now uses React.js for frontend with Material UI for reusable components and hooks for adjustable colors. Used Procreate to draw website images.",
+    projectDescription: "projects:projects.project6.description",
     projectLink: "https://github.com/BriannHu/Personal-Website-V2",
     tags: [
       {
@@ -104,11 +100,10 @@ export const ProjectItems = [
     ],
   },
   {
-    projectName: "Pseudo OS",
+    projectName: "projects:projects.project5.name",
     projectType: 2,
     imageLink: "/images/projects/pseudo_os.png",
-    projectDescription:
-      "Application created using C that simulates operating system. Complete prototype includes functional shell, kernel, memory-manager and ability to mount partitions and read to/write from basic files.",
+    projectDescription: "projects:projects.project5.description",
     projectLink:
       "https://www.mcgill.ca/deanofstudents/students/student-rights-responsibilities/code",
     tags: [
@@ -118,11 +113,10 @@ export const ProjectItems = [
     ],
   },
   {
-    projectName: "DISCS Lab Website",
+    projectName: "projects:projects.project4.name",
     projectType: 1,
     imageLink: "/images/projects/discs_website.png",
-    projectDescription:
-      "Research website created for McGill's Data-Intensive Storage and Computer System Lab. Aimed towards undergraduates, where they can read more about the lab's activities and apply if they're interested.",
+    projectDescription: "projects:projects.project4.description",
     projectLink: "https://github.com/BriannHu/DISCS-Website",
     tags: [
       {
@@ -137,11 +131,10 @@ export const ProjectItems = [
     ],
   },
   {
-    projectName: "COVID-19 Visualizer",
+    projectName: "projects:projects.project3.name",
     projectType: 0,
     imageLink: "/images/projects/covid_visualizer.png",
-    projectDescription:
-      "Application that collects Coronavirus data in real-time and visualizes it on graph. User can toggle between different regions as well as filter by type of information (ie. infected, deceased, cured).",
+    projectDescription: "projects:projects.project3.description",
     projectLink: "https://github.com/BriannHu/Covid19Visualizer",
     tags: [
       {
@@ -162,11 +155,10 @@ export const ProjectItems = [
     ],
   },
   {
-    projectName: "MiniML",
+    projectName: "projects:projects.project2.name",
     projectType: 2,
     imageLink: "/images/projects/toy_language.png",
-    projectDescription:
-      "Application created using OCaml that implemented toy language with features such as free variable checking, substitutions, evaluation, type checking and type inference.",
+    projectDescription: "projects:projects.project2.description",
     projectLink:
       "https://www.mcgill.ca/deanofstudents/students/student-rights-responsibilities/code",
     tags: [
@@ -176,11 +168,10 @@ export const ProjectItems = [
     ],
   },
   {
-    projectName: "Personal Site 1.0",
+    projectName: "projects:projects.project1.name",
     projectType: 1,
     imageLink: "/images/projects/personal_website_v1.png",
-    projectDescription:
-      "My first website! Great experience for learning the fundamentals of HTML + CSS/SCSS and Javascript. Used libraries such as Particles.js and scroll-spy to enhance website visuals.",
+    projectDescription: "projects:projects.project1.description",
     projectLink: "https://github.com/BriannHu/PortfolioV1",
     tags: [
       {

@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, IconButton, Paper, useScrollTrigger } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
+import GTranslateIcon from "@material-ui/icons/GTranslate";
 import MenuIcon from "@material-ui/icons/Menu";
 import MoonIcon from "@material-ui/icons/NightsStayOutlined";
 import SunIcon from "@material-ui/icons/WbSunnyOutlined";
+
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({
   boxColorOption: {
@@ -29,12 +32,13 @@ const useStyles = makeStyles((theme) => ({
   boxItem1Box1: {
     marginRight: theme.spacing(1),
   },
+  button: {
+    color: (props) => props.primaryText,
+    marginLeft: theme.spacing(1),
+  },
   header: {
     backgroundColor: (props) => props.secondaryBackground,
     transition: "all 0.25s ease-in-out 0s",
-  },
-  iconButton: {
-    marginLeft: theme.spacing(1),
   },
   innerBox: {
     display: "flex",
@@ -43,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   icon: {
+    color: (props) => props.primaryText,
+  },
+  languageLabel: {
     color: (props) => props.primaryText,
   },
   show: {
@@ -77,6 +84,14 @@ const useStyles = makeStyles((theme) => ({
 export default function Appbar(props) {
   const classes = useStyles(props);
   const trigger = useScrollTrigger();
+  const { i18n } = useTranslation();
+  const [english, setEnglish] = useState(true);
+
+  const handleLanguageClick = () => {
+    setEnglish(!english);
+    const lang = english ? "fr" : "en";
+    i18n.changeLanguage(lang);
+  };
 
   return (
     <Paper
@@ -122,6 +137,12 @@ export default function Appbar(props) {
                 onClick={() => props.handleColorClick("purple")}
               ></Box>
             </Box>
+            <IconButton
+              className={classes.button}
+              onClick={handleLanguageClick}
+            >
+              <GTranslateIcon />
+            </IconButton>
             <IconButton
               className={classes.iconButton}
               onClick={() => props.handleThemeClick(props.dark)}

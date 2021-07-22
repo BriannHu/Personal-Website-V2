@@ -1,0 +1,47 @@
+{
+  "title": "Projects",
+  "projects": {
+    "project1": {
+      "name": "Personal Site 1.0",
+      "description": "My first website! Great experience for learning the fundamentals of HTML + CSS/SCSS and Javascript. Used libraries such as Particles.js and scroll-spy to enhance website visuals."
+    },
+    "project2": {
+      "name": "MiniML",
+      "description": "Application created using OCaml that implemented toy language with features such as free variable checking, substitutions, evaluation, type checking and type inference."
+    },
+    "project3": {
+      "name": "COVID-19 Visualizer",
+      "description": "Application that collects Coronavirus data in real-time and visualizes it on graph. User can toggle between different regions as well as filter by type of information (ie. infected, deceased, cured)."
+    },
+    "project4": {
+      "name": "DISCS Lab Website",
+      "description": "Research website created for McGill's Data-Intensive Storage and Computer System Lab. Aimed towards undergraduates, where they can read more about the lab's activities and apply if they're interested."
+    },
+    "project5": {
+      "name": "Pseudo OS",
+      "description": "Application created using C that simulates operating system. Complete prototype includes functional shell, kernel, memory-manager and ability to mount partitions and read to/write from basic files."
+    },
+    "project6": {
+      "name": "Personal Site 2.0",
+      "description": "Second iteration of my personal portfolio website! Now uses React.js for frontend with Material UI for reusable components and hooks for adjustable colors. Used Procreate to draw website images."
+    },
+    "project7": {
+      "name": "NSERC Project",
+      "description": "Research project focusing on improving performance of RocksDB on real-time data analytics, by augmenting in-memory data structures. Custom benchmarks simulating social media workloads are tested on the system."
+    },
+    "project8": {
+      "name": "ASL Transcriber",
+      "description": "Application that converts detected ASL gestures to the English alphabet. Users will have time to sign letters for them to appear dynamically on the screen. Includes a bonus phrase! (Hint: 🤟)"
+    },
+    "project9": {
+      "name": "Run.Trackr",
+      "description": "Full-stack MERN application designed to help runners prepare and train for upcoming races. Users can record, visualize and export runs, as well as track their past distance, duration and average pace."
+    }
+  },
+  "tags": {
+    "hackathon": "Hackathon",
+    "personal": "Personal",
+    "academic": "Academic",
+    "research": "Research"
+  }
+}

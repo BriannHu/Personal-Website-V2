@@ -1,0 +1,47 @@
+{
+  "title": "Projets",
+  "projects": {
+    "project1": {
+      "name": "Site personnel 1.0",
+      "description": "Mon premier site internet ! Grande expérience pour apprendre les bases de HTML + CSS/SCSS et Javascript. Bibliothèques utilisées telles que Particles.js et scroll-spy pour améliorer les visuels du site Web."
+    },
+    "project2": {
+      "name": "MiniML",
+      "description": "Application créée à l'aide d'OCaml qui a implémenté un langage jouet avec des fonctionnalités telles que la vérification gratuite de variables, les substitutions, l'évaluation, la vérification de type et l'inférence de type."
+    },
+    "project3": {
+      "name": "Visualiseur COVID-19",
+      "description": "Application qui collecte les données du coronavirus en temps réel et les visualise sur un graphique. L'utilisateur peut basculer entre les différentes régions ainsi que filtrer par type d'information (c'est-à-dire infecté, décédé, guéri)."
+    },
+    "project4": {
+      "name": "Site Web du laboratoire DISCS",
+      "description": "Site Web de recherche créé pour le laboratoire de stockage et de systèmes informatiques à forte intensité de données de McGill. Destiné aux étudiants de premier cycle, où ils peuvent en savoir plus sur les activités du laboratoire et postuler s'ils sont intéressés."
+    },
+    "project5": {
+      "name": "Pseudo OS",
+      "description": "Application créée à l'aide de C qui simule le système d'exploitation. Le prototype complet comprend un shell fonctionnel, un noyau, un gestionnaire de mémoire et la possibilité de monter des partitions et de lire/écrire à partir de fichiers de base."
+    },
+    "project6": {
+      "name": "Site personnel 2.0",
+      "description": "Deuxième itération de mon site Web de portfolio personnel! Utilise maintenant React.js pour le frontend avec Material UI pour les composants réutilisables et les crochets pour les couleurs réglables. J'ai utilisé Procreate pour dessiner des images de sites Web."
+    },
+    "project7": {
+      "name": "Projet du CRSNG",
+      "description": "Projet de recherche axé sur l'amélioration des performances de RocksDB sur l'analyse de données en temps réel, en augmentant les structures de données en mémoire. Des benchmarks personnalisés simulant les charges de travail des réseaux sociaux sont testés sur le système."
+    },
+    "project8": {
+      "name": "Transcripteur ASL",
+      "description": "Application qui convertit les gestes ASL détectés en alphabet anglais. Les utilisateurs auront le temps de signer des lettres pour qu'elles apparaissent dynamiquement à l'écran. Comprend une phrase bonus! (Indice: 🤟)"
+    },
+    "project9": {
+      "name": "Run.Trackr",
+      "description": "Application MERN à pile complète conçue pour aider les coureurs à se préparer et à s'entraîner pour les courses à venir. Les utilisateurs peuvent enregistrer, visualiser et exporter des courses, ainsi que suivre leur distance passée, leur durée et leur allure moyenne."
+    }
+  },
+  "tags": {
+    "hackathon": "Hackathon",
+    "personal": "Personnel",
+    "academic": "Académique",
+    "research": "Recherche"
+  }
+}

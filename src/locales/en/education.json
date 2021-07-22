@@ -1,0 +1,22 @@
+{
+  "title": "Education",
+  "date": "September 2019 - Present",
+  "program": "Honors Computer Science & Statistics Minor (BSc.)",
+  "location": {
+    "subtitle": "Location",
+    "value": "McGill University (Montreal, QC)"
+  },
+  "graduation": {
+    "subtitle": "Expected Graduation",
+    "value": "April 2023"
+  },
+  "awards": {
+    "subtitle": "Awards",
+    "value": "Dean's List (2019-20) • Faculty of Science Scholarship (2019-20) • MES bourses d'excellences (2020-21) • Wing Hing Chan Scholarship in Science (2020-21)"
+  },
+  "coursework": {
+    "subtitle": "Relevant Coursework",
+    "computer": "Computer Science",
+    "mathematics": "Mathematics"
+  }
+}

@@ -21,6 +21,8 @@ import ArrowIcon from "@material-ui/icons/ArrowRightAltOutlined";
 
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 
+import { useTranslation } from "react-i18next";
+
 const AccordionSummary = withStyles({
   root: {
     flexDirection: "column",
@@ -117,6 +119,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Education(props) {
   const classes = useStyles(props);
+  const { t } = useTranslation();
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -131,7 +135,7 @@ export default function Education(props) {
             variant="h3"
             style={{ color: props.color }}
           >
-            Education
+            {t("education:title")}
           </Typography>
         </Box>
         <Paper
@@ -146,7 +150,7 @@ export default function Education(props) {
           >
             <Grid item>
               <Typography className={classes.paperTitle} variant="h5">
-                Honors Computer Science & Statistics Minor (BSc.)
+                {t("education:program")}
               </Typography>
             </Grid>
             <Grid item>
@@ -156,21 +160,21 @@ export default function Education(props) {
                 style={{ color: props.color }}
                 variant="h6"
               >
-                September 2019 - Present
+                {t("education:date")}
               </Typography>
             </Grid>
           </Grid>
           <Typography className={classes.paperItem}>
             <Box component="span" style={{ color: props.color }}>
-              Location:
+              {t("education:location.subtitle")}
             </Box>{" "}
-            McGill University (Montreal, QC)
+            {t("education:location.value")}
           </Typography>
           <Typography className={classes.paperItem}>
             <Box component="span" style={{ color: props.color }}>
-              Expected Graduation:
+              {t("education:graduation.subtitle")}
             </Box>{" "}
-            April 2023
+            {t("education:graduation.value")}
           </Typography>
           <Typography className={classes.paperItem}>
             <Box component="span" style={{ color: props.color }}>
@@ -180,18 +184,16 @@ export default function Education(props) {
           </Typography>
           <Typography className={classes.paperItem}>
             <Box component="span" style={{ color: props.color }}>
-              Awards:
+              {t("education:awards.subtitle")}
             </Box>{" "}
-            Dean's List (2019-20) • Faculty of Science Scholarship (2019-20) •
-            MES bourses d'excellences (2020-21) • Wing Hing Chan Scholarship in
-            Science (2020-21)
+            {t("education:awards.value")}
           </Typography>
           <Accordion className={classes.accordion} elevation={0}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon style={{ color: props.color }} />}
             >
               <Typography style={{ color: props.color, fontWeight: 100 }}>
-                Relevant Coursework
+                {t("education:coursework.subtitle")}
               </Typography>
             </AccordionSummary>
             <AccordionDetails className={classes.accordionDetails}>
@@ -201,7 +203,7 @@ export default function Education(props) {
                     className={classes.accordionGridSubtitle}
                     style={{ color: props.color }}
                   >
-                    Computer Science
+                    {t("education:coursework.computer")}
                   </Typography>
                   <List className={classes.listContainer}>
                     {CSItems.map((item, index) => {
@@ -228,7 +230,7 @@ export default function Education(props) {
                     className={classes.accordionGridSubtitle}
                     style={{ color: props.color }}
                   >
-                    Mathematics
+                    {t("education:coursework.mathematics")}
                   </Typography>
                   <List className={classes.listContainer}>
                     {MathItems.map((item, index) => {

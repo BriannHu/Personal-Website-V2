@@ -1,0 +1,22 @@
+{
+  "title": "Éducation",
+  "date": "septembre 2019 - présent",
+  "program": "Mineure spécialisée en informatique et statistique (BSc.)",
+  "location": {
+    "subtitle": "Emplacement",
+    "value": "Université McGill (Montréal, QC)"
+  },
+  "graduation": {
+    "subtitle": "Diplôme attendu",
+    "value": "avril 2023"
+  },
+  "awards": {
+    "subtitle": "Récompenses",
+    "value": "Liste du doyen (2019-20) • Bourse de la Faculté des sciences (2019-20) • Bourses d'excellence MES (2020-21) • Bourse Wing Hing Chan en sciences (2020-21)"
+  },
+  "coursework": {
+    "subtitle": "Cours pertinents",
+    "computer": "L'informatique",
+    "mathematics": "Mathématiques"
+  }
+}

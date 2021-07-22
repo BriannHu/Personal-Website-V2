@@ -121,12 +121,12 @@ export const Miscellaneous = [
     name: "Procreate",
   },
   {
-    name: "Chess",
+    name: "about:miscellaneous.chess",
   },
   {
-    name: "Running",
+    name: "about:miscellaneous.running",
   },
   {
-    name: "Cooking",
+    name: "about:miscellaneous.cooking",
   },
 ];

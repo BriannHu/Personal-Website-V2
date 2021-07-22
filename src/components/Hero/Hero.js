@@ -16,6 +16,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import InfoIcon from "@material-ui/icons/InfoOutlined";
 import ResumeIcon from "@material-ui/icons/MenuBook";
 
+import { useTranslation } from "react-i18next";
 import "./Hero.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -102,6 +103,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Hero(props) {
   const classes = useStyles(props);
+  const { t } = useTranslation();
 
   return (
     <Box className={classes.rootBox} id="/">
@@ -111,7 +113,7 @@ export default function Hero(props) {
             <Box>
               <Box className={classes.textBox1} component="div">
                 <Typography variant="h2" style={{ fontWeight: 900 }}>
-                  Hi, I'm Brian! <br /> I love to{" "}
+                  {t("hero:greeting")} <br /> {t("hero:subgreeting")}{" "}
                   <Typography
                     component="span"
                     variant="h2"
@@ -119,10 +121,10 @@ export default function Hero(props) {
                   >
                     <TextLoop
                       children={[
-                        "design 🎨",
-                        "build 💻",
-                        "research 🔬",
-                        "learn 📖",
+                        `${t("hero:description.part1")} 🎨`,
+                        `${t("hero:description.part2")}  💻`,
+                        `${t("hero:description.part3")}  🔬`,
+                        `${t("hero:description.part4")}  📖`,
                       ]}
                       className={classes.textLoop}
                       interval={2000}
@@ -133,9 +135,7 @@ export default function Hero(props) {
                 </Typography>
               </Box>
               <Box className={classes.textBox2} component="div">
-                <Typography variant="h6">
-                  Computer Science + Statistics @ McGill University
-                </Typography>
+                <Typography variant="h6">{t("hero:study")}</Typography>
               </Box>
               <Box className={classes.textBox3} component="div">
                 <Button
@@ -151,7 +151,8 @@ export default function Hero(props) {
                   }}
                   target="_blank"
                 >
-                  Explore Github <GitHubIcon className={classes.buttonIcon} />
+                  {t("hero:button1")}{" "}
+                  <GitHubIcon className={classes.buttonIcon} />
                 </Button>
                 <Button
                   className={classes.textBoxButton}
@@ -163,14 +164,15 @@ export default function Hero(props) {
                   }}
                   target="_blank"
                 >
-                  View Resume <ResumeIcon className={classes.buttonIcon} />
+                  {t("hero:button2")}{" "}
+                  <ResumeIcon className={classes.buttonIcon} />
                 </Button>
               </Box>
             </Box>
           </Grid>
           <Grid className={classes.innerGridItem} item xs={12} md={6}>
             <Box className={classes.imageBox}>
-              <Tooltip title={`Procreate Credit: Rishi Draws`} arrow>
+              <Tooltip title={t("hero:credit")} arrow>
                 <IconButton
                   component={Link}
                   className={classes.infoIcon}

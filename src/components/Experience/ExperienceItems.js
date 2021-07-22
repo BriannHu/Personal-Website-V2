@@ -3,18 +3,18 @@ export const ExperienceItems = [
     type: "school", // either school or work
     orientation: "right", // refers to which side text is on
     imageLink: "/images/experience/enactus.jpg",
-    roleTitle: "Web & Software Development Coordinator",
-    roleLocation: "Enactus McGill",
-    roleDate: "July 2021 - Present",
+    roleTitle: "experience:experience4.title",
+    roleLocation: "experience:experience4.location",
+    roleDate: "experience:experience4.date",
     tags: [
       {
-        name: "In Progress!",
+        name: "experience:experience4.tagline",
         level: 2,
       },
     ],
     points: [
       {
-        text: "Just getting started, more to come!",
+        text: "experience:experience4.points.point1",
       },
     ],
   },
@@ -22,9 +22,9 @@ export const ExperienceItems = [
     type: "work", // either school or work
     orientation: "left", // refers to which side text is on
     imageLink: "/images/experience/mcgill.jpg",
-    roleTitle: "Undergraduate Researcher",
-    roleLocation: "Data-Intensive Storage and Computer Systems Lab",
-    roleDate: "April 2021 - Present",
+    roleTitle: "experience:experience3.title",
+    roleLocation: "experience:experience3.location",
+    roleDate: "experience:experience3.date",
     tags: [
       {
         name: "Git",
@@ -53,16 +53,16 @@ export const ExperienceItems = [
     ],
     points: [
       {
-        text: "Research project funded by NSERC USRA, supervised by Dr. Oana Balmau",
+        text: "experience:experience3.points.point1",
       },
       {
-        text: "Focus on NoSQL systems design for real-time data analytics",
+        text: "experience:experience3.points.point2",
       },
       {
-        text: "Developed and ran representative data analytics benchmark in C++ to simulate social media workload using RocksDB to identify significant bottlenecks.",
+        text: "experience:experience3.points.point3",
       },
       {
-        text: "Still in progress!",
+        text: "experience:experience3.points.point4",
       },
     ],
   },
@@ -70,9 +70,9 @@ export const ExperienceItems = [
     type: "school", // either school or work
     orientation: "right", // refers to which side image is on
     imageLink: "/images/experience/discord.png",
-    roleTitle: "Helpdesk Tutor",
-    roleLocation: "McGill Computer Science Undergraduate Society",
-    roleDate: "September 2020 - April 2021",
+    roleTitle: "experience:experience2.title",
+    roleLocation: "experience:experience2.location",
+    roleDate: "experience:experience2.date",
     tags: [
       {
         name: "Python",
@@ -97,13 +97,13 @@ export const ExperienceItems = [
     ],
     points: [
       {
-        text: "Received Tomlinson Engagement Award for Mentoring, on behalf of CSUS Helpdesk",
+        text: "experience:experience2.points.point1",
       },
       {
-        text: "Provided virtual peer-to-peer tutoring on Discord to students enrolled in undergraduate programming classes",
+        text: "experience:experience2.points.point2",
       },
       {
-        text: "Explained core programming concepts and theory, in order to work towards solutions without explictly giving away answer",
+        text: "experience:experience2.points.point3",
       },
     ],
   },
@@ -111,9 +111,9 @@ export const ExperienceItems = [
     type: "work", // either school or work
     orientation: "left", // refers to which side image is on
     imageLink: "/images/experience/mcgill2.jpeg",
-    roleTitle: "Research Assistant",
-    roleLocation: "Distributed Systems Information Lab",
-    roleDate: "September 2020 - December 2020",
+    roleTitle: "experience:experience1.title",
+    roleLocation: "experience:experience1.location",
+    roleDate: "experience:experience1.date",
     tags: [
       {
         name: "Python",
@@ -134,13 +134,13 @@ export const ExperienceItems = [
     ],
     points: [
       {
-        text: "Collected network packets over McGill’s network using different compression algorithms in container environment",
+        text: "experience:experience1.points.point1",
       },
       {
-        text: "Analyzed network traffic with Wireshark and resolved packet retransmission issues",
+        text: "experience:experience1.points.point2",
       },
       {
-        text: "Created technical documentation for lab’s proprietary AIDA software (Agile Abstraction for Advanced In-Database Analytics)",
+        text: "experience:experience1.points.point3",
       },
     ],
   },
