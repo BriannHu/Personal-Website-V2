@@ -389,7 +389,7 @@ export default function About(props) {
                 {t("about:subtitles.subtitle3")}
               </Typography>
               <Box className={classes.chipSection}>
-                <Tooltip title="These are the things I've recently picked up or I do for fun!">
+                <Tooltip title={t("about:info")}>
                   <InfoIcon className={classes.infoIcon} />
                 </Tooltip>
                 {Miscellaneous.map((item, index) => {

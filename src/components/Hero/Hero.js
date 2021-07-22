@@ -52,6 +52,12 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: theme.spacing(2),
     },
   },
+  mainText: {
+    // eslint-disable-next-line
+    ["@media (max-width:640px)"]: {
+      fontSize: "3rem",
+    },
+  },
   outerGridItem: {
     display: "flex",
   },
@@ -59,6 +65,8 @@ const useStyles = makeStyles((theme) => ({
     color: (props) => props.primaryText,
     transition: "all 0.25s ease-in-out 0s",
     marginBottom: theme.spacing(2),
+    overflow: "hidden",
+    width: "100%",
   },
   textBox2: {
     color: (props) => props.secondaryText,
@@ -110,11 +118,16 @@ export default function Hero(props) {
       <Box className={classes.innerBox} id="back-to-top-anchor">
         <Grid className={classes.outerGridItem} container>
           <Grid className={classes.innerGridItem} container item xs={12} md={6}>
-            <Box>
+            <Box className={classes.mainTextBox}>
               <Box className={classes.textBox1} component="div">
-                <Typography variant="h2" style={{ fontWeight: 900 }}>
+                <Typography
+                  className={classes.mainText}
+                  variant="h2"
+                  style={{ fontWeight: 900 }}
+                >
                   {t("hero:greeting")} <br /> {t("hero:subgreeting")}{" "}
                   <Typography
+                    className={classes.mainText}
                     component="span"
                     variant="h2"
                     style={{ color: props.color, fontWeight: 900 }}
@@ -122,9 +135,9 @@ export default function Hero(props) {
                     <TextLoop
                       children={[
                         `${t("hero:description.part1")} 🎨`,
-                        `${t("hero:description.part2")}  💻`,
-                        `${t("hero:description.part3")}  🔬`,
-                        `${t("hero:description.part4")}  📖`,
+                        `${t("hero:description.part2")} 💻`,
+                        `${t("hero:description.part3")} 🔬`,
+                        `${t("hero:description.part4")} 📖`,
                       ]}
                       className={classes.textLoop}
                       interval={2000}
