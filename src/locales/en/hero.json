@@ -1,0 +1,14 @@
+{
+  "greeting": "Hi, I'm Brian!",
+  "subgreeting": "I love to",
+  "description": {
+    "part1": "design",
+    "part2": "build",
+    "part3": "research",
+    "part4": "learn"
+  },
+  "study": "Computer Science + Statistics @ McGill University",
+  "button1": "Explore Github",
+  "button2": "View Resume",
+  "credit": "Procreate Credit: Rishi Draws"
+}

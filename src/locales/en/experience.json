@@ -1,0 +1,43 @@
+{
+  "title": "Experience",
+  "experience1": {
+    "title": "Research Assistant",
+    "location": "Distributed Systems Information Lab",
+    "date": "September 2020 - December 2020",
+    "points": {
+      "point1": "Collected network packets over McGill’s network using different compression algorithms in containerized environment",
+      "point2": "Analyzed network traffic with Wireshark and resolved packet retransmission issues",
+      "point3": "Created technical documentation for lab’s proprietary AIDA software (Agile Abstraction for Advanced In-Database Analytics)"
+    }
+  },
+  "experience2": {
+    "title": "Helpdesk Tutor",
+    "location": "McGill Computer Science Undergraduate Society",
+    "date": "September 2020 - April 2021",
+    "points": {
+      "point1": "Received Tomlinson Engagement Award for Mentoring, on behalf of CSUS Helpdesk",
+      "point2": "Provided virtual peer-to-peer tutoring on Discord to students enrolled in undergraduate programming classes",
+      "point3": "Explained core programming concepts and theory, in order to work towards solutions without explictly giving away answer"
+    }
+  },
+  "experience3": {
+    "title": "Undergraduate Researcher",
+    "location": "Data-Intensive Storage and Computer Systems Lab",
+    "date": "April 2021 - Present",
+    "points": {
+      "point1": "Research project funded by NSERC USRA, supervised by Dr. Oana Balmau",
+      "point2": "Focus on NoSQL systems design for real-time data analytics",
+      "point3": "Developed and ran representative data analytics benchmark in C++ to simulate social media workload using RocksDB to identify significant bottlenecks",
+      "point4": "Still in progress!"
+    }
+  },
+  "experience4": {
+    "title": "Web & Software Development Coordinator",
+    "location": "Enactus McGill",
+    "date": "July 2021 - Present",
+    "points": {
+      "point1": "Just getting started, more to come!"
+    },
+    "tagline": "In Progress!"
+  }
+}

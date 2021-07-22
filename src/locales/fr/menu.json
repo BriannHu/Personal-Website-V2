@@ -1,0 +1,10 @@
+{
+  "site": {
+    "about": "Sujet",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "education": "Éducation",
+    "contact": "Contact"
+  },
+  "social": "Sociaux"
+}

@@ -29,6 +29,8 @@ import ExperiencedIcon from "@material-ui/icons/GradeOutlined";
 import FamiliarIcon from "@material-ui/icons/CheckOutlined";
 import InfoIcon from "@material-ui/icons/InfoOutlined";
 
+import { useTranslation } from "react-i18next";
+
 const useStyles = makeStyles((theme) => ({
   chip: {
     marginRight: theme.spacing(1),
@@ -143,6 +145,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function About(props) {
   const classes = useStyles(props);
+  const { t } = useTranslation();
 
   useEffect(() => {
     Aos.init({ duration: 800 });
@@ -157,11 +160,10 @@ export default function About(props) {
             variant="h3"
             style={{ color: props.color }}
           >
-            About
+            {t("about:title")}
           </Typography>
           <Typography className={classes.description} variant="h6">
-            Hello! My name is Brian and I'm a third-year student at McGill
-            University. Currently, I'm pursuing a degree in{" "}
+            {t("about:description1.part1")}{" "}
             <Typography
               className={classes.descriptionLink}
               component={Link}
@@ -173,7 +175,7 @@ export default function About(props) {
               target="_blank"
               variant="h6"
             >
-              Honors Computer Science
+              {t("about:description1.subject1")}
             </Typography>{" "}
             and a{" "}
             <Typography
@@ -187,18 +189,13 @@ export default function About(props) {
               target="_blank"
               variant="h6"
             >
-              Statistics minor
+              {t("about:description1.subject2")}
             </Typography>{" "}
-            . I'm fascinated by the intersection of big data and performant
-            designs, and hope to eventually pursue a career in software
-            development. <br /> <br />
-            My interests include AI/ML and cybersecurity, and I strive to
-            incorporate these themes in my personal projects. In my spare time,
-            I enjoy both participating in hackathons as well as tutoring others
-            on the fundamentals of programming. <br />
+            {t("about:description1.part3")} <br /> <br />
+            {t("about:description2")} <br />
             <br />
             <Typography></Typography>
-            Feel free to check out my{" "}
+            {t("about:description3:part1")}{" "}
             <Typography
               className={classes.descriptionLink}
               component={Link}
@@ -210,8 +207,8 @@ export default function About(props) {
               variant="h6"
             >
               Github
-            </Typography>{" "}
-            , connect on{" "}
+            </Typography>
+            {t("about:description3:part2")}{" "}
             <Typography
               className={classes.descriptionLink}
               component={Link}
@@ -223,8 +220,8 @@ export default function About(props) {
               variant="h6"
             >
               LinkedIn
-            </Typography>{" "}
-            , or download my{" "}
+            </Typography>
+            {t("about:description3:part3")}{" "}
             <Typography
               className={classes.descriptionLink}
               component={Link}
@@ -248,38 +245,37 @@ export default function About(props) {
             style={{ color: props.color }}
             variant="h5"
           >
-            Here are the languages, tools and technologies I've picked up along
-            the way... <br />
+            {t("about:languages")} <br />
           </Typography>
           <Typography
             className={classes.hoverDescription}
             style={{ color: props.color, fontWeight: 800 }}
             variant="subtitle1"
           >
-            (Hover over each icon!)
+            {t("about:hover")}
           </Typography>
         </Box>
         <Box className={classes.legendBox}>
-          <Tooltip title="> 3 years of experience">
+          <Tooltip title={t("about:tags.def1")}>
             <Chip
               icon={<ProficientIcon style={{ color: "#00b0ff" }} />}
-              label="Proficient"
+              label={t("about:tags.proficient")}
               style={{ borderColor: "#00b0ff", color: "#00b0ff" }}
               variant="outlined"
             />
           </Tooltip>
-          <Tooltip title="1-3 years of experience">
+          <Tooltip title={t("about:tags.def2")}>
             <Chip
               icon={<ExperiencedIcon style={{ color: "#00e676" }} />}
-              label="Experienced"
+              label={t("about:tags.experienced")}
               style={{ borderColor: "#00e676", color: "#00e676" }}
               variant="outlined"
             />
           </Tooltip>
-          <Tooltip title="< 1 year of experience">
+          <Tooltip title={t("about:tags.def3")}>
             <Chip
               icon={<FamiliarIcon style={{ color: "#ff9800" }} />}
-              label="Familiar"
+              label={t("about:tags.familiar")}
               style={{ borderColor: "#ff9800", color: "#ff9800" }}
               variant="outlined"
             />
@@ -306,7 +302,7 @@ export default function About(props) {
                 <FrontendIcon />
               </Avatar>
               <Typography className={classes.gridItemSubtitle} variant="h6">
-                Programming Languages
+                {t("about:subtitles.subtitle1")}
               </Typography>
               <Box className={classes.chipSection}>
                 {Languages.map((item, index) => {
@@ -348,7 +344,7 @@ export default function About(props) {
                 <BackendIcon />
               </Avatar>
               <Typography className={classes.gridItemSubtitle} variant="h6">
-                Tools & Technologies
+                {t("about:subtitles.subtitle2")}
               </Typography>
               <Box className={classes.chipSection}>
                 {Technologies.map((item, index) => {
@@ -390,7 +386,7 @@ export default function About(props) {
                 <CyberIcon />
               </Avatar>
               <Typography className={classes.gridItemSubtitle} variant="h6">
-                Miscellaneous
+                {t("about:subtitles.subtitle3")}
               </Typography>
               <Box className={classes.chipSection}>
                 <Tooltip title="These are the things I've recently picked up or I do for fun!">
@@ -401,7 +397,7 @@ export default function About(props) {
                     <Chip
                       className={classes.chip}
                       key={index}
-                      label={item.name}
+                      label={t(item.name)}
                       variant="outlined"
                       style={{
                         borderColor: props.primaryText,

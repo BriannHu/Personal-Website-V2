@@ -1,0 +1,36 @@
+{
+  "title": "Sujet",
+  "description1": {
+    "part1": "Bonjour! Je m'appelle Brian et je suis un étudiant de troisième année à l'Université McGill. Actuellement, je poursuis un baccalauréat",
+    "subject1": "spécialisé en informatique",
+    "part2": "et une",
+    "subject2": "mineure en statistique.",
+    "part3": "Je suis fasciné par l'intersection du big data et des conceptions performantes, et j'espère éventuellement poursuivre une carrière dans le développement de logiciels."
+  },
+  "description2": "Mes intérêts incluent l'IA/ML et la cybersécurité, et je m'efforce d'intégrer ces thèmes dans mes projets personnels. Dans mon temps libre, j'aime à la fois participer à des hackathons et enseigner aux autres les bases de la programmation.",
+  "description3": {
+    "part1": "N'hésitez pas à consulter mon",
+    "part2": ", connecter sur",
+    "part3": ", ou télécharger mon"
+  },
+  "languages": "Voici les langages, outils et technologies que j'ai acquis en cours de route...",
+  "hover": "(Passez la souris sur chaque icône!)",
+  "tags": {
+    "proficient": "Compétent",
+    "def1": "> 3 ans d'expérience",
+    "experienced": "Expérimenté",
+    "def2": "1 - 3 ans d'expérience",
+    "familiar": "Familier",
+    "def3": "< 1 an d'expérience"
+  },
+  "subtitles": {
+    "subtitle1": "Langages de programmation",
+    "subtitle2": "Outils et technologies",
+    "subtitle3": "Objets divers"
+  },
+  "miscellaneous": {
+    "chess": "Jeu d'échecs",
+    "running": "La course",
+    "cooking": "Cuisson"
+  }
+}

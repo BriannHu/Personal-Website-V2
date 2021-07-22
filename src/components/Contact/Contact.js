@@ -9,6 +9,8 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import MailIcon from "@material-ui/icons/MailOutline";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 
+import { useTranslation } from "react-i18next";
+
 const useStyles = makeStyles((theme) => ({
   boxLink: {
     color: (props) => props.primaryText,
@@ -25,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     display: "flex",
     flexDirection: "column",
+    textAlign: "center",
     paddingTop: theme.spacing(4),
   },
   contactFooterText: {
@@ -39,7 +42,6 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
   },
-  iconText: {},
   innerBox: {
     margin: "0 auto",
     maxWidth: 1236,
@@ -68,6 +70,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Contact(props) {
   const classes = useStyles(props);
+  const { t } = useTranslation();
 
   const handleScrollToTop = (e) => {
     const anchor = (e.target.ownerDocument || document).querySelector(
@@ -174,7 +177,7 @@ export default function Contact(props) {
             </IconButton>
           </Box>
           <Typography className={classes.contactFooterText}>
-            Created by Brian Hu using Material UI. © Brian Hu 2021.
+            {t("contact:credit")}
           </Typography>
         </Box>
       </Box>

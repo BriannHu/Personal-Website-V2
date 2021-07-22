@@ -13,6 +13,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import CloseIcon from "@material-ui/icons/Close";
 
 import { SiteMenuItems, SocialMenuItems } from "./MenuItems";
+import { useTranslation } from "react-i18next";
 
 const useStyles = makeStyles((theme) => ({
   closeBox: {
@@ -102,6 +103,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function SideMenu(props) {
   const classes = useStyles(props);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -134,7 +136,7 @@ export default function SideMenu(props) {
                       className={classes.linkItemText}
                       variant="subtitle1"
                     >
-                      {item.name}
+                      {t(item.name)}
                     </Typography>
                   </Box>
                 );
@@ -146,7 +148,7 @@ export default function SideMenu(props) {
                   className={classes.linkHeaderText}
                   variant="subtitle1"
                 >
-                  Socials
+                  {t("menu:social")}
                 </Typography>
               </Box>
               {SocialMenuItems.map((item, index) => {

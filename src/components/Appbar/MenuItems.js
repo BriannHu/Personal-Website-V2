@@ -1,26 +1,26 @@
 export const SiteMenuItems = [
   {
-    name: "About",
+    name: "menu:site.about",
     icon: "dashboard",
     location: "/#about",
   },
   {
-    name: "Experience",
+    name: "menu:site.experience",
     icon: "info",
     location: "/#experience",
   },
   {
-    name: "Projects",
+    name: "menu:site.projects",
     icon: "info",
     location: "/#projects",
   },
   {
-    name: "Education",
+    name: "menu:site.education",
     icon: "info",
     location: "/#education",
   },
   {
-    name: "Contact",
+    name: "menu:site.contact",
     icon: "info",
     location: "/#contact",
   },

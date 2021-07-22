@@ -1,0 +1,43 @@
+{
+  "title": "Expérience",
+  "experience1": {
+    "title": "Assistant de recherche",
+    "location": "Laboratoire d'information sur les systèmes distribués",
+    "date": "septembre 2020 - décembre 2020",
+    "points": {
+      "point1": "Paquets réseau collectés sur le réseau de McGill à l'aide de différents algorithmes de compression dans un environnement conteneurisé",
+      "point2": "Analyse du trafic réseau avec Wireshark et résolution des problèmes de retransmission de paquets",
+      "point3": "Création de la documentation technique pour le logiciel propriétaire AIDA du laboratoire (Agile Abstraction for Advanced In-Database Analytics)"
+    }
+  },
+  "experience2": {
+    "title": "Tuteur helpdesk",
+    "location": "Société de premier cycle en informatique de McGill",
+    "date": "septembre 2020 - avril 2021",
+    "points": {
+      "point1": "A reçu le Tomlinson Engagement Award for Mentoring, au nom du CSUS Helpdesk",
+      "point2": "Fourni un tutorat virtuel entre pairs sur Discord aux étudiants inscrits dans des cours de programmation de premier cycle",
+      "point3": "Explication des concepts de base et de la théorie de la programmation, afin de travailler vers des solutions sans donner explicitement de réponse"
+    }
+  },
+  "experience3": {
+    "title": "Chercheur de premier cycle",
+    "location": "Laboratoire de stockage et de systèmes informatiques à forte intensité de données",
+    "date": "avril 2021 - présent",
+    "points": {
+      "point1": "Projet de recherche financé par CRSNG USRA, supervisé par Dr. Oana Balmau",
+      "point2": "Focus sur la conception de systèmes NoSQL pour l'analyse de données en temps réel",
+      "point3": "Développement et exécution d'un benchmark d'analyse de données représentatif en C++ pour simuler la charge de travail des réseaux sociaux à l'aide de RocksDB afin d'identifier les goulots d'étranglement importants",
+      "point4": "Encore en progrès!"
+    }
+  },
+  "experience4": {
+    "title": "Coordinateur développement web et logiciel",
+    "location": "Enactus McGill",
+    "date": "juillet 2021 - présent",
+    "points": {
+      "point1": "Je viens de commencer, plus à venir!"
+    },
+    "tagline": "En cours!"
+  }
+}
