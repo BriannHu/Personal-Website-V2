@@ -1,13 +1,13 @@
 {
   "title": "Sujet",
   "description1": {
-    "part1": "Bonjour! Je m'appelle Brian et je suis un étudiant de troisième année à l'Université McGill. Actuellement, je poursuis un baccalauréat",
-    "subject1": "spécialisé en informatique",
+    "part1": "Bonjour ! Je m'appelle Brian et je suis un étudiant de troisième année à l'Université McGill. Actuellement, je poursuis un diplôme en",
+    "subject1": "informatique avec spécialisation",
     "part2": "et une",
     "subject2": "mineure en statistique.",
-    "part3": "Je suis fasciné par l'intersection du big data et des conceptions performantes, et j'espère éventuellement poursuivre une carrière dans le développement de logiciels."
+    "part3": "Je suis fasciné par l'intersection du big data et des conceptions performantes, et j'espère faire carrière dans le développement de logiciels."
   },
-  "description2": "Mes intérêts incluent l'IA/ML et la cybersécurité, et je m'efforce d'intégrer ces thèmes dans mes projets personnels. Dans mon temps libre, j'aime à la fois participer à des hackathons et enseigner aux autres les bases de la programmation.",
+  "description2": "Je m'intéresse à l'IA/ML et à la cybersécurité, et je m'efforce d'intégrer ces thèmes dans mes projets personnels. Pendant mon temps libre, j'aime participer à des hackathons et donner des cours aux autres sur les principes fondamentaux de la programmation.",
   "description3": {
     "part1": "N'hésitez pas à consulter mon",
     "part2": ", connecter sur",

@@ -177,7 +177,7 @@ export default function About(props) {
             >
               {t("about:description1.subject1")}
             </Typography>{" "}
-            and a{" "}
+            {t("about:description1.part2")}{" "}
             <Typography
               className={classes.descriptionLink}
               component={Link}
