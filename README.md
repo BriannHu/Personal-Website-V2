@@ -2,7 +2,8 @@
 
 ## Introduction
 
-Hello! I'm Brian, and this is my website!
+Hello! I'm Brian, and this is my [website](https://www.brianhu.ca)!
+
 
 Some quick facts about me:
 
