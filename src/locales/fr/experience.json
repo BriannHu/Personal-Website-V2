@@ -23,7 +23,7 @@
   "experience3": {
     "title": "Chercheur de premier cycle",
     "location": "Laboratoire de stockage et de systèmes informatiques à forte intensité de données",
-    "date": "avril 2021 - présent",
+    "date": "avril 2021 - août 2021",
     "points": {
       "point1": "Projet de recherche financé par CRSNG USRA, supervisé par Dr. Oana Balmau",
       "point2": "Focus sur la conception de systèmes NoSQL pour l'analyse de données en temps réel",
@@ -35,6 +35,16 @@
     "title": "Coordinateur développement web et logiciel",
     "location": "Enactus McGill",
     "date": "juillet 2021 - présent",
+    "points": {
+      "point1": "Nous travaillons actuellement sur la plateforme web MTLocal",
+      "point2": "Mise en œuvre d'un front-end utilisant Material UI et Redux pour la communication avec le back-end"
+    },
+    "tagline": "En cours!"
+  },
+  "experience5": {
+    "title": "Stagiaire développeur cloud",
+    "location": "CloudOps",
+    "date": "septembre 2021 - présent",
     "points": {
       "point1": "Je viens de commencer, plus à venir!"
     },

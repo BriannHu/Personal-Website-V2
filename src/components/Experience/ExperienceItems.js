@@ -1,5 +1,24 @@
 export const ExperienceItems = [
   {
+    type: "work", // either school or work
+    orientation: "left", // refers to which side text is on
+    imageLink: "/images/experience/cloudops.jpg",
+    roleTitle: "experience:experience5.title",
+    roleLocation: "experience:experience5.location",
+    roleDate: "experience:experience5.date",
+    tags: [
+      {
+        name: "experience:experience5.tagline",
+        level: 2,
+      },
+    ],
+    points: [
+      {
+        text: "experience:experience5.points.point1",
+      },
+    ],
+  },
+  {
     type: "school", // either school or work
     orientation: "right", // refers to which side text is on
     imageLink: "/images/experience/enactus.jpg",
@@ -8,13 +27,20 @@ export const ExperienceItems = [
     roleDate: "experience:experience4.date",
     tags: [
       {
-        name: "experience:experience4.tagline",
-        level: 2,
+        name: "MERN",
+        level: 3,
+      },
+      {
+        name: "Git",
+        level: 3,
       },
     ],
     points: [
       {
         text: "experience:experience4.points.point1",
+      },
+      {
+        text: "experience:experience4.points.point2",
       },
     ],
   },

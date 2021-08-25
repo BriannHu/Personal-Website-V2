@@ -207,7 +207,7 @@ export default function Experience(props) {
                                 <Chip
                                   className={classes.chip}
                                   key={tagID}
-                                  label={tag.name}
+                                  label={t(tag.name)} // CAN REMOVE AFTER, ONLY NECESSARY FOR "IN PROGRESS" TRANSLATION
                                   style={{
                                     borderColor: LevelConversion[tag.level],
                                     color: LevelConversion[tag.level],

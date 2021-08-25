@@ -23,7 +23,7 @@
   "experience3": {
     "title": "Undergraduate Researcher",
     "location": "Data-Intensive Storage and Computer Systems Lab",
-    "date": "April 2021 - Present",
+    "date": "April 2021 - August 2021",
     "points": {
       "point1": "Research project funded by NSERC USRA, supervised by Dr. Oana Balmau",
       "point2": "Focus on NoSQL systems design for real-time data analytics",
@@ -35,6 +35,15 @@
     "title": "Web & Software Development Coordinator",
     "location": "Enactus McGill",
     "date": "July 2021 - Present",
+    "points": {
+      "point1": "Currently working on MTLocal web platform",
+      "point2": "Implemented frontend using Material UI and Redux for backend communication"
+    }
+  },
+  "experience5": {
+    "title": "Cloud Developer Intern",
+    "location": "CloudOps",
+    "date": "September 2021 - Present",
     "points": {
       "point1": "Just getting started, more to come!"
     },
