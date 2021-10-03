@@ -8,13 +8,34 @@ export const ExperienceItems = [
     roleDate: "experience:experience5.date",
     tags: [
       {
-        name: "experience:experience5.tagline",
+        name: "Java Springboot",
+        level: 3,
+      },
+      {
+        name: "Vue.js",
+        level: 3,
+      },
+      {
+        name: "Groovy/Jest",
+        level: 2,
+      },
+      {
+        name: "Jira/Jenkins",
         level: 2,
       },
     ],
     points: [
       {
         text: "experience:experience5.points.point1",
+      },
+      {
+        text: "experience:experience5.points.point3",
+      },
+      {
+        text: "experience:experience5.points.point4",
+      },
+      {
+        text: "experience:experience5.points.point5",
       },
     ],
   },
@@ -34,6 +55,14 @@ export const ExperienceItems = [
         name: "Git",
         level: 3,
       },
+      {
+        name: "Material UI",
+        level: 2,
+      },
+      {
+        name: "Redux",
+        level: 2,
+      },
     ],
     points: [
       {
@@ -41,6 +70,9 @@ export const ExperienceItems = [
       },
       {
         text: "experience:experience4.points.point2",
+      },
+      {
+        text: "experience:experience4.points.point3",
       },
     ],
   },

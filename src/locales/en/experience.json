@@ -28,16 +28,17 @@
       "point1": "Research project funded by NSERC USRA, supervised by Dr. Oana Balmau",
       "point2": "Focus on NoSQL systems design for real-time data analytics",
       "point3": "Developed and ran representative data analytics benchmark in C++ to simulate social media workload using RocksDB to identify significant bottlenecks",
-      "point4": "Still in progress!"
+      "point4": "Increased read/write performance and overall throughput by over 200% after re-designing memtable value structures"
     }
   },
   "experience4": {
     "title": "Web & Software Development Coordinator",
     "location": "Enactus McGill",
-    "date": "July 2021 - Present",
+    "date": "July 2021 - October 2021",
     "points": {
-      "point1": "Currently working on MTLocal web platform",
-      "point2": "Implemented frontend using Material UI and Redux for backend communication"
+      "point1": "Coordinated development for front-end of full-stack web application using React.js and Material UI framework",
+      "point2": "Integrated front-end with back-end using Redux and MongoDB for database management",
+      "point3": "Planned for continuation of project with club executives and establishing key design choices for future improvements"
     }
   },
   "experience5": {
@@ -45,8 +46,10 @@
     "location": "CloudOps",
     "date": "September 2021 - Present",
     "points": {
-      "point1": "Just getting started, more to come!"
-    },
-    "tagline": "In Progress!"
+      "point1": "Implemented full-stack features using Java Springboot and Vue.js of a multi-cloud management SaaS platform, integrated REST APIs of public and private cloud platforms",
+      "point3": "Improved monetization features such as tax provider configuration and monthly invoice generation",
+      "point4": "Developed unit tests using Groovy (Java) and Jest (Vue.js) with above 90% code coverage",
+      "point5": "Completed tasks and key deliverables using Agile development process with Jira and Jenkins CI/CD pipeline"
+    }
   }
 }

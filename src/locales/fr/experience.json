@@ -28,26 +28,28 @@
       "point1": "Projet de recherche financé par CRSNG USRA, supervisé par Dr. Oana Balmau",
       "point2": "Focus sur la conception de systèmes NoSQL pour l'analyse de données en temps réel",
       "point3": "Développement et exécution d'un benchmark d'analyse de données représentatif en C++ pour simuler la charge de travail des réseaux sociaux à l'aide de RocksDB afin d'identifier les goulots d'étranglement importants",
-      "point4": "Encore en progrès!"
+      "point4": "Augmentation des performances de lecture/écriture et du débit global de plus de 200 % après la refonte des structures de valeurs des tables de mémoire"
     }
   },
   "experience4": {
     "title": "Coordinateur développement web et logiciel",
     "location": "Enactus McGill",
-    "date": "juillet 2021 - présent",
+    "date": "juillet 2021 - octobre 2021",
     "points": {
-      "point1": "Nous travaillons actuellement sur la plateforme web MTLocal",
-      "point2": "Mise en œuvre d'un front-end utilisant Material UI et Redux pour la communication avec le back-end"
-    },
-    "tagline": "En cours!"
+      "point1": "Coordination du développement de la partie frontale d'une application web complète à l'aide de React.js et du cadre Material UI",
+      "point2": "Intégration du front-end avec le back-end en utilisant Redux et MongoDB pour la gestion de la base de données",
+      "point3": "Planification de la poursuite du projet avec les dirigeants du club et établissement des principaux choix de conception pour les améliorations futures"
+    }
   },
   "experience5": {
     "title": "Stagiaire développeur cloud",
     "location": "CloudOps",
     "date": "septembre 2021 - présent",
     "points": {
-      "point1": "Je viens de commencer, plus à venir!"
-    },
-    "tagline": "En cours!"
+      "point1": "Mise en œuvre de fonctionnalités complètes à l'aide de Java Springboot et Vue.js pour une plateforme SaaS de gestion multi-cloud, intégration d'API REST de plateformes de clouds publics et privés",
+      "point2": "Amélioration des fonctions de monétisation, telles que la configuration du fournisseur de taxes et la génération de factures mensuelles",
+      "point3": "Développement de tests unitaires à l'aide de Groovy (Java) et Jest (Vue.js) avec une couverture de code supérieure à 90%",
+      "point4": "Réalisation de tâches et de livrables clés en utilisant le processus de développement Agile avec Jira et le pipeline CI/CD de Jenkins"
+    }
   }
 }
