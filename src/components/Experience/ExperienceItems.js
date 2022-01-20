@@ -1,5 +1,31 @@
 export const ExperienceItems = [
   {
+    type: "school", // either school or work
+    orientation: "right", // refers to which side text is on
+    imageLink: "/images/experience/h4i.jpg",
+    roleTitle: "experience:experience6.title",
+    roleLocation: "experience:experience6.location",
+    roleDate: "experience:experience6.date",
+    tags: [
+      {
+        name: "React.js",
+        level: 3,
+      },
+      {
+        name: "Git",
+        level: 3,
+      },
+    ],
+    points: [
+      {
+        text: "experience:experience6.points.point1",
+      },
+      {
+        text: "experience:experience6.points.point2",
+      },
+    ],
+  },
+  {
     type: "work", // either school or work
     orientation: "left", // refers to which side text is on
     imageLink: "/images/experience/cloudops.jpg",
@@ -27,6 +53,9 @@ export const ExperienceItems = [
     points: [
       {
         text: "experience:experience5.points.point1",
+      },
+      {
+        text: "experience:experience5.points.point2",
       },
       {
         text: "experience:experience5.points.point3",

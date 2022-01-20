@@ -44,12 +44,22 @@
   "experience5": {
     "title": "Stagiaire développeur cloud",
     "location": "CloudOps",
-    "date": "septembre 2021 - présent",
+    "date": "septembre 2021 - décembre 2021",
     "points": {
       "point1": "Mise en œuvre de fonctionnalités complètes à l'aide de Java Springboot et Vue.js pour une plateforme SaaS de gestion multi-cloud, intégration d'API REST de plateformes de clouds publics et privés",
       "point2": "Amélioration des fonctions de monétisation, telles que la configuration du fournisseur de taxes et la génération de factures mensuelles",
-      "point3": "Développement de tests unitaires à l'aide de Groovy (Java) et Jest (Vue.js) avec une couverture de code supérieure à 90%",
-      "point4": "Réalisation de tâches et de livrables clés en utilisant le processus de développement Agile avec Jira et le pipeline CI/CD de Jenkins"
+      "point3": "Identification des problèmes de performance des bases de données à l'aide d'Elastic APM et de Kibana, refonte du code pour réduire la latence de plus de 70 %",
+      "point4": "Développement de tests unitaires à l'aide de Groovy (Java) et Jest (Vue.js) avec une couverture de code supérieure à 90%",
+      "point5": "Réalisation de tâches et de livrables clés en utilisant le processus de développement Agile avec Jira et le pipeline CI/CD de Jenkins"
+    }
+  },
+  "experience6": {
+    "title": "Développeur de logiciels",
+    "location": "Hack4Impact McGill",
+    "date": "octobre 2021 - présent",
+    "points": {
+      "point1": "Mise en œuvre de fonctionnalités frontales sur une application web/mobile à l'aide de React.js",
+      "point2": "Encore en cours!"
     }
   }
 }

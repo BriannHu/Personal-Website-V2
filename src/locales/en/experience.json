@@ -44,12 +44,22 @@
   "experience5": {
     "title": "Cloud Developer Intern",
     "location": "CloudOps",
-    "date": "September 2021 - Present",
+    "date": "September 2021 - December 2021",
     "points": {
       "point1": "Implemented full-stack features using Java Springboot and Vue.js of a multi-cloud management SaaS platform, integrated REST APIs of public and private cloud platforms",
-      "point3": "Improved monetization features such as tax provider configuration and monthly invoice generation",
+      "point2": "Improved monetization features such as tax provider configuration and monthly invoice generation",
+      "point3": "Identified database performance issues using Elastic APM and Kibana, refactored code to reduce latency by 70%+",
       "point4": "Developed unit tests using Groovy (Java) and Jest (Vue.js) with above 90% code coverage",
       "point5": "Completed tasks and key deliverables using Agile development process with Jira and Jenkins CI/CD pipeline"
+    }
+  },
+  "experience6": {
+    "title": "Software Developer",
+    "location": "Hack4Impact McGill",
+    "date": "October 2021 - Present",
+    "points": {
+      "point1": "Implementing frontend features on web/mobile application using React.js",
+      "point2": "Still in progress!"
     }
   }
 }

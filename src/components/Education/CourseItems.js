@@ -27,6 +27,9 @@ export const CSItems = [
     name: "COMP310 - Operating Systems",
   },
   {
+    name: "COMP321 - Programming Challenges",
+  },
+  {
     name: "COMP322 - Introduction to C++",
   },
   {
@@ -58,5 +61,8 @@ export const MathItems = [
   },
   {
     name: "MATH323 - Probability",
+  },
+  {
+    name: "MATH324 - Statistics",
   },
 ];
