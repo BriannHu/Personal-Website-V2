@@ -54,12 +54,31 @@
     }
   },
   "experience6": {
-    "title": "Software Developer",
+    "title": "Tech Lead",
     "location": "Hack4Impact McGill",
     "date": "October 2021 - Present",
     "points": {
-      "point1": "Implementing frontend features on web/mobile application using React.js",
-      "point2": "Still in progress!"
+      "point1": "Led a team of 6 developers for Hack4Impact, a club aiming to support local non-profit organizations",
+      "point2": "Determined key objectives with project manager to develop an application to track food usage and reduce waste",
+      "point3": "Designed a mobile first front-end using React and MaterialUI, and back-end using Flask and Postgres"
+    }
+  },
+  "experience7": {
+    "title": "Software Engineer Intern",
+    "location": "DRW",
+    "date": "May 2022 - August 2022",
+    "points": {
+      "point1": "Designed and built internal tool using Go to automate network tower reporting through Prontoforms, with Amazon SQS and Faktory, saving up to 10 hours a week of manual overhead in processing forms",
+      "point2": "Extracted RESTful logic from different applications into library to interact with internal API, refactored existing projects to integrate with new library",
+      "point3": "Implemented HTTP testing framework in all Go-based projects, and achieved over 80% test coverage"
+    }
+  },
+  "experience8": {
+    "title": "Incoming Software Engineer Intern",
+    "location": "Squarepoint Capital",
+    "date": "September 2022 - December 2022",
+    "points": {
+      "point1": "Will be on the data development and engineering team"
     }
   }
 }

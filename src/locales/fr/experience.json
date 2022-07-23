@@ -54,12 +54,31 @@
     }
   },
   "experience6": {
-    "title": "Développeur de logiciels",
+    "title": "Chef technicien",
     "location": "Hack4Impact McGill",
     "date": "octobre 2021 - présent",
     "points": {
-      "point1": "Mise en œuvre de fonctionnalités frontales sur une application web/mobile à l'aide de React.js",
-      "point2": "Encore en cours!"
+      "point1" : "A dirigé une équipe de 6 développeurs pour Hack4Impact, un club visant à soutenir les organisations locales à but non lucratif",
+      "point2" : "Déterminé les objectifs clés avec le chef de projet pour développer une application permettant de suivre l'utilisation de la nourriture et de réduire les déchets",
+      "point3" : "Conçu un front-end mobile first utilisant React et MaterialUI, et un back-end utilisant Flask et Postgres"
+    }
+  },
+  "experience7" : {
+    "title" : "Ingénieur logiciel stagiaire",
+    "location" : "DRW",
+    "date" : "mai 2022 - août 2022",
+    "points" : {
+      "point1" : "Conçu et construit un outil interne utilisant Go pour automatiser les rapports sur les tours de réseau via Prontoforms, avec Amazon SQS et Faktory, économisant jusqu'à 10 heures par semaine de frais généraux manuels dans le traitement des formulaires",
+      "point2" : "Extraction de la logique RESTful de différentes applications dans une bibliothèque pour interagir avec l'API interne, refactorisation des projets existants pour les intégrer à la nouvelle bibliothèque",
+      "point3" : "Implémentation du cadre de test HTTP dans tous les projets basés sur Go, et obtention d'une couverture de test de plus de 80%"
+    }
+  },
+  "experience8" : {
+    "title" : "Ingénieur logiciel stagiaire entrant",
+    "location" : "Squarepoint Capital",
+    "date" : "septembre 2022 - décembre 2022",
+    "points" : {
+      "point1" : "Fera partie de l'équipe de développement et d'ingénierie des données"
     }
   }
 }

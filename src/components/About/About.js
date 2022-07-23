@@ -177,21 +177,7 @@ export default function About(props) {
             >
               {t("about:description1.subject1")}
             </Typography>{" "}
-            {t("about:description1.part2")}{" "}
-            <Typography
-              className={classes.descriptionLink}
-              component={Link}
-              style={{ color: props.color }}
-              to={{
-                pathname:
-                  "https://www.mcgill.ca/mathstat/undergraduate/programs/b-sc/minor-statistics-b-sc",
-              }}
-              target="_blank"
-              variant="h6"
-            >
-              {t("about:description1.subject2")}
-            </Typography>{" "}
-            {t("about:description1.part3")} <br /> <br />
+            {t("about:description1.part2")} <br /> <br />
             {t("about:description2")} <br />
             <br />
             <Typography></Typography>

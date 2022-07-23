@@ -1,11 +1,9 @@
 {
   "title": "About",
   "description1": {
-    "part1": "Hello! My name is Brian and I'm a third-year student at McGill University. Currently, I'm pursuing a degree in",
-    "subject1": "Honors Computer Science",
-    "part2": "and a",
-    "subject2": "Statistics minor.",
-    "part3": "I'm fascinated by the intersection of big data and performant designs, and hope to eventually pursue a career in software development."
+    "part1": "Hello! My name is Brian and I'm an incoming fourth-year student at McGill University. Currently, I'm pursuing a degree in",
+    "subject1": "Computer Science.",
+    "part2": "I'm fascinated by the intersection of big data and performant designs, and hope to eventually pursue a career in software development."
   },
   "description2": "My interests include AI/ML and cybersecurity, and I strive to incorporate these themes in my personal projects. In my spare time, I enjoy both participating in hackathons as well as tutoring others on the fundamentals of programming.",
   "description3": {

@@ -33,6 +33,15 @@ export const CSItems = [
     name: "COMP322 - Introduction to C++",
   },
   {
+    name: "COMP400 - Project in Computer Science",
+  },
+  {
+    name: "COMP421 - Database Systems",
+  },
+  {
+    name: "COMP551 - Applied Machine Learning",
+  },
+  {
     name: "COMP598 - Intro to Data Science",
   },
 ];
@@ -60,9 +69,15 @@ export const MathItems = [
     name: "MATH240 - Discrete Structures 1",
   },
   {
+    name: "MATH308 - Fundamentals of Statistical Learning",
+  },
+  {
     name: "MATH323 - Probability",
   },
   {
     name: "MATH324 - Statistics",
+  },
+  {
+    name: "MATH340 - Discrete Structures 2",
   },
 ];

@@ -26,6 +26,11 @@ export const Languages = [
     blurb: "console.log(everything)",
   },
   {
+    name: "Go",
+    level: 2,
+    blurb: "So fast!",
+  },
+  {
     name: "C",
     level: 2,
     blurb: "Segmentation fault (core dumped)",

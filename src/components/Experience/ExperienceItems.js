@@ -1,5 +1,57 @@
 export const ExperienceItems = [
   {
+    type: "work", // either school or work
+    orientation: "right", // refers to which side text is on
+    imageLink: "/images/experience/squarepoint.jpeg",
+    roleTitle: "experience:experience8.title",
+    roleLocation: "experience:experience8.location",
+    roleDate: "experience:experience8.date",
+    tags: [
+      {
+        name: "Python",
+        level: 3,
+      },
+    ],
+    points: [
+      {
+        text: "experience:experience8.points.point1",
+      },
+    ],
+  },
+  {
+    type: "work", // either school or work
+    orientation: "left", // refers to which side text is on
+    imageLink: "/images/experience/drw.jpg",
+    roleTitle: "experience:experience7.title",
+    roleLocation: "experience:experience7.location",
+    roleDate: "experience:experience7.date",
+    tags: [
+      {
+        name: "Go",
+        level: 3,
+      },
+      {
+        name: "Amazon SQS",
+        level: 2,
+      },
+      {
+        name: "Faktory",
+        level: 2,
+      },
+    ],
+    points: [
+      {
+        text: "experience:experience7.points.point1",
+      },
+      {
+        text: "experience:experience7.points.point2",
+      },
+      {
+        text: "experience:experience7.points.point3",
+      },
+    ],
+  },
+  {
     type: "school", // either school or work
     orientation: "right", // refers to which side text is on
     imageLink: "/images/experience/h4i.jpg",
@@ -12,7 +64,11 @@ export const ExperienceItems = [
         level: 3,
       },
       {
-        name: "Git",
+        name: "Flask",
+        level: 3,
+      },
+      {
+        name: "Postgres",
         level: 3,
       },
     ],
@@ -22,6 +78,9 @@ export const ExperienceItems = [
       },
       {
         text: "experience:experience6.points.point2",
+      },
+      {
+        text: "experience:experience6.points.point3",
       },
     ],
   },
