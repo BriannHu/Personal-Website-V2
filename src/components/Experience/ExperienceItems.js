@@ -11,10 +11,20 @@ export const ExperienceItems = [
         name: "Python",
         level: 3,
       },
+      {
+        name: "React",
+        level: 3,
+      },
     ],
     points: [
       {
         text: "experience:experience8.points.point1",
+      },
+      {
+        text: "experience:experience8.points.point2",
+      },
+      {
+        text: "experience:experience8.points.point3",
       },
     ],
   },

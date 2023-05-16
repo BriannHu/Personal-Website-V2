@@ -1,9 +1,9 @@
 {
-  "title": "Sujet",
+  "title": "Un peu sur moi",
   "description1": {
-    "part1": "Bonjour ! Je m'appelle Brian et je suis un nouvel étudiant de quatrième année à l'Université McGill. Actuellement, je poursuis un diplôme en",
-    "subject1": "l'informatique.",
-    "part2": "Je suis fasciné par l'intersection du big data et des conceptions performantes, et j'espère faire carrière dans le développement de logiciels."
+    "part1": "Bonjour! Je m'appelle Brian et je suis actuellement ingénieur logiciel chez DRW. Je suis titulaire d'un ",
+    "subject1": "BSc. en informatique,",
+    "part2": "après avoir obtenu mon diplôme de l'Université McGill en 2023. J'aime apprendre de nouvelles façons de créer des solutions afin de résoudre les problèmes de manière créative et efficace."
   },
   "description2": "Je m'intéresse à l'IA/ML et à la cybersécurité, et je m'efforce d'intégrer ces thèmes dans mes projets personnels. Pendant mon temps libre, j'aime participer à des hackathons et donner des cours aux autres sur les principes fondamentaux de la programmation.",
   "description3": {

@@ -74,11 +74,13 @@
     }
   },
   "experience8" : {
-    "title" : "Ingénieur logiciel stagiaire entrant",
+    "title" : "Ingénieur logiciel stagiaire",
     "location" : "Squarepoint Capital",
     "date" : "septembre 2022 - décembre 2022",
     "points" : {
-      "point1" : "Fera partie de l'équipe de développement et d'ingénierie des données"
+      "point1": "Développé un outil d'analyse des dépendances à l'aide de Python pour détecter les vulnérabilités de sécurité externes et identifiées en interne, intégré Gitlab CI/CD pour automatiser la mise à niveau des dépendances dans les projets internes",
+      "point2": "Mise en œuvre de la validation du modèle commercial dans le cadre du registre stratégique à l'aide de React pour réduire les erreurs des utilisateurs de 20%",
+      "point3": "Ajout de la journalisation des erreurs avec Pino au tableau de bord interne de l'entreprise, fournissant des données mises à jour pour la surveillance du cloud"
     }
   }
 }

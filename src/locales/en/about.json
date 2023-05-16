@@ -1,9 +1,9 @@
 {
   "title": "About",
   "description1": {
-    "part1": "Hello! My name is Brian and I'm an incoming fourth-year student at McGill University. Currently, I'm pursuing a degree in",
-    "subject1": "Computer Science.",
-    "part2": "I'm fascinated by the intersection of big data and performant designs, and hope to eventually pursue a career in software development."
+    "part1": "Hello! My name is Brian and I'm currently a software engineer at DRW. I hold a ",
+    "subject1": "BSc. in Computer Science,",
+    "part2": " after graduating from McGill University in 2023. I love learning new ways to build solutions in order to solve problems both creatively and efficiently."
   },
   "description2": "My interests include AI/ML and cybersecurity, and I strive to incorporate these themes in my personal projects. In my spare time, I enjoy both participating in hackathons as well as tutoring others on the fundamentals of programming.",
   "description3": {

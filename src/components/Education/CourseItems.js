@@ -33,10 +33,19 @@ export const CSItems = [
     name: "COMP322 - Introduction to C++",
   },
   {
+    name: "COMOP330 - Theory of Computation",
+  },
+  {
+    name: "Algorithm Design",
+  },
+  {
     name: "COMP400 - Project in Computer Science",
   },
   {
     name: "COMP421 - Database Systems",
+  },
+  {
+    name: "COMP520 - Compiler Design",
   },
   {
     name: "COMP551 - Applied Machine Learning",

@@ -74,11 +74,13 @@
     }
   },
   "experience8": {
-    "title": "Incoming Software Engineer Intern",
+    "title": "Software Engineer Intern",
     "location": "Squarepoint Capital",
     "date": "September 2022 - December 2022",
     "points": {
-      "point1": "Will be on the data development and engineering team"
+      "point1": "Developed dependency analysis tool using Python to detect external and internally identified security vulnerabilities, integrated Gitlab CI/CD to automate dependency upgrading across internal projects",
+      "point2": "Implemented trade template validation in Strategy Registry Framework using React to reduce user errors by 20%",
+      "point3": "Added error logging with Pino to internal company dashboard, providing updated data for cloud monitoring"
     }
   }
 }
